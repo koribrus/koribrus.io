@@ -1,0 +1,63 @@
+h4 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 15rem;
+  margin-right: 200px;
+}
+
+.project-r .column-left {
+  grid-column: 1 / 7;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-r .column-right {
+  position: relative;
+  grid-column: 7 / 13;
+}
+
+.project-r .project-img img {
+  max-width: 750px;
+}
+
+.project-r .project-tags ul {
+  display: flex;
+  list-style: none;
+}
+
+.project-r .project-tags ul li {
+  margin: 1rem 1.5rem;
+}
+
+.project-r .project-heading {
+  text-align: right !important;
+}
+
+.project-r .project-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #d3d3d3;
+  padding: 1.5rem;
+}
+
+.project-r .column-right .icons {
+  display: flex !important;
+  justify-content: flex-end;
+  flex-direction: row;
+  padding: 1rem;
+}

@@ -1,0 +1,70 @@
+h4 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 1rem;
+  /* margin-bottom: 15rem; */
+  margin-right: 200px;
+}
+
+.project-l .column-left {
+  position: relative;
+  grid-column: 1 / 7;
+  grid-row: 1;
+}
+
+.project-l .column-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  grid-column: 6 / -1;
+  grid-row: 1;
+  z-index: -1;
+}
+
+.project-l .project-img img {
+  max-width: 750px;
+}
+
+.project-l .project-tags ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.project-l .project-tags ul li {
+  margin: 1rem 1.5rem;
+}
+
+.project-l .project-heading {
+  text-align: left !important;
+}
+
+.project-l .project-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #d3d3d3;
+  padding: 1.5rem;
+  z-index: 1;
+}
+
+.project-l .column-left .icons {
+  display: flex !important;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 1rem;
+}

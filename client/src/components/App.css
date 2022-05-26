@@ -1,0 +1,25 @@
+.app-grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: auto;
+}
+
+.item-a {
+  /* see Sidebar.css for styles */
+}
+
+.item-b {
+  /* see NavigationBar.css for styles */
+}
+
+.item-c {
+  /* see Introduction.css for styles */
+}
+
+.item-d {
+  /* see About.css for styles */
+}
+
+.main-content {
+  padding-left: 15rem;
+}

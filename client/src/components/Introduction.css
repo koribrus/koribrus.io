@@ -1,0 +1,29 @@
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.introduction {
+  margin-bottom: 15rem;
+  padding-top: 15rem;
+}
+
+.bullet-columns {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.intro-content {
+  width: 42rem;
+}

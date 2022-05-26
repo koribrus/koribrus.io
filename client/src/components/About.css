@@ -1,0 +1,60 @@
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.about {
+  margin-bottom: 15rem;
+  margin-right: 15rem;
+  padding: 0 7.5rem;
+}
+
+.about-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.line {
+  background-color: #333;
+  width: 250px;
+  height: 2px;
+  transform: translateY(-50%);
+  margin-left: 0.5rem;
+}
+
+.about-content {
+  display: flex;
+}
+
+.profile-text {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.profile-img {
+  max-width: 350px;
+  height: auto;
+  margin: 1rem;
+}
+
+.about-graph {
+  padding-left: 2rem;
+}
+
+.graph-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.graph-line {
+  background-color: #333;
+  width: 250px;
+  height: 8px;
+  transform: translateY(-75%);
+  margin-left: 0.5rem;
+}
