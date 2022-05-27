@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { load } from '../redux/projects';
@@ -10,17 +10,18 @@ import ProjectRight from './ProjectRight';
 const Projects = () => {
   let { projects } = useSelector((state) => state.projects);
   const dispatch = useDispatch();
+  const stableDispatch = useCallback(dispatch, []);
 
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await fetch('/api/projects');
       const { data } = await response.json();
 
-      dispatch(load(data.projects));
+      stableDispatch(load(data.projects));
     };
 
     fetchProjects();
-  }, []);
+  }, [stableDispatch]);
 
   const renderProjects = (projects) => {
     const components = projects.map((project, index) => {
