@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { load } from '../redux/projects';
 
 import ProjectsHeader from './ProjectsHeader';
 import ProjectLeft from './ProjectLeft';
 import ProjectRight from './ProjectRight';
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
+  let { projects } = useSelector((state) => state.projects);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await fetch('/api/projects');
       const { data } = await response.json();
 
-      setProjects(data.projects);
+      dispatch(load(data.projects));
     };
 
     fetchProjects();
