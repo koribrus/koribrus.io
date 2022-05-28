@@ -24,8 +24,10 @@ const About = () => {
             tincidunt vitae semper quis lectus nulla. Feugiat sed lectus vestibulum mattis.
           </p>
         </div>
-        <div>
-          <img src={profileImg} alt='profile pic' className='profile-img' />
+        <div className='img-container'>
+          <div className='profile-img-bg'>
+            <img src={profileImg} alt='profile pic' className='profile-img' />
+          </div>
         </div>
       </div>
       <div className='about-graph'>

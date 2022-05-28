@@ -2,16 +2,29 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Sidebar.css';
-import logo from './kb-logo-test.jpg';
+import logo1 from '../img/logos/kb-logo-v1.png';
+import logo2 from '../img/logos/kb-logo-v1-b.png';
+import logo3 from '../img/logos/kb-logo-v2.png';
+import logo4 from '../img/logos/kb-logo-v3.png';
 
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <img src={logo} alt='KB logo' width='100' height='100' />
-      <div className='icons'>
-        <FontAwesomeIcon icon={faGithub} className='icon' />
-        <FontAwesomeIcon icon={faInstagram} className='icon' />
-        <FontAwesomeIcon icon={faLinkedin} className='icon' />
+      <img src={logo3} alt='KB logo' width='150' height='150' />
+      <div className='nav-links'>
+        <div className='line-vertical top'></div>
+        <div className='icons'>
+          <a href='https://github.com/koribrus' rel='noreferrer' target='_blank'>
+            <FontAwesomeIcon icon={faGithub} className='icon' />
+          </a>
+          <a href='https://www.instagram.com/koribrus' rel='noreferrer' target='_blank'>
+            <FontAwesomeIcon icon={faInstagram} className='icon' />
+          </a>
+          <a href='https://www.linkedin.com/in/koribrus' rel='noreferrer' target='_blank'>
+            <FontAwesomeIcon icon={faLinkedin} className='icon' />
+          </a>
+        </div>
+        <div className='line-vertical'></div>
       </div>
     </div>
   );

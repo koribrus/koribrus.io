@@ -32,8 +32,12 @@ const ProjectRight = ({ project }) => {
           <h4>{project.header[1]}</h4>
         </div>
         <div className='icons'>
-          <FontAwesomeIcon icon={faGithub} className='icon' />
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='icon' />
+          <a href={project.gitURL} rel='noreferrer' target='_blank'>
+            <FontAwesomeIcon icon={faGithub} className='icon' />
+          </a>
+          <a href={project.URL} rel='noreferrer' target='_blank'>
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='icon' />
+          </a>
         </div>
         <div
           className='project-content'

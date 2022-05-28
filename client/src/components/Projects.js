@@ -8,7 +8,7 @@ import ProjectLeft from './ProjectLeft';
 import ProjectRight from './ProjectRight';
 
 const Projects = () => {
-  let { projects } = useSelector((state) => state.projects);
+  const { projects } = useSelector((state) => state.projects);
   const dispatch = useDispatch();
   const stableDispatch = useCallback(dispatch, []);
 

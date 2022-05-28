@@ -1,9 +1,18 @@
+/* li {
+  font-family: 'Consolas', 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 200 !important;
+  color: var(--primary-text) !important;
+  transition: 0.5s ease all;
+} */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   grid-column: 2;
   grid-column-end: 6;
   height: 75px;
+  color: var(--primary-text);
 }
 
 .nav-menu {
@@ -15,4 +24,31 @@
 
 .nav-item {
   padding: 0 2rem;
+  transition: 0.5s ease-in-out all;
+}
+
+.nav-link {
+  font-family: 'Consolas', 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 200 !important;
+  color: var(--primary-text) !important;
+  transition: 0.5s ease-in-out all;
+}
+
+.nav-item:hover {
+  transform: scale(110%);
+}
+
+.nav-item:hover .nav-link {
+  color: var(--highlight) !important;
+}
+
+.paranthesis {
+  color: var(--primary-text);
+  opacity: 0;
+  transition: 0.5s ease-in-out all;
+}
+
+.nav-item:hover .paranthesis {
+  opacity: 1;
 }

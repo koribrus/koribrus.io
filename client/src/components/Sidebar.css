@@ -9,6 +9,13 @@
   grid-row: span 2;
 }
 
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .icons {
   display: flex;
   flex-direction: column;
@@ -16,6 +23,25 @@
 }
 
 .icon {
+  color: var(--primary-text);
   font-size: 1.5rem;
   padding: 1rem;
+  transition: 0.25s ease-in-out all;
+}
+
+.icon:hover {
+  color: var(--highlight);
+  transform: translateY(-5%);
+}
+
+.line-vertical {
+  background-color: var(--primary-text);
+  width: 2px;
+  height: 100px;
+  margin-top: 2rem;
+}
+
+.top {
+  height: 50px;
+  margin-bottom: 2rem;
 }

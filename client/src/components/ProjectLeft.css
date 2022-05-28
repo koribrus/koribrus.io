@@ -1,23 +1,24 @@
-h4 {
-  font-size: 1.75rem;
-  margin: 0;
-}
-
-h5 {
-  font-size: 1.25rem;
-  margin: 0;
-}
-
-p {
-  font-size: 1rem;
-}
-
 .project {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-top: 1rem;
   /* margin-bottom: 15rem; */
   margin-right: 200px;
+}
+
+.project h4 {
+  color: var(--primary-text);
+  font-family: 'Segoe UI Variable', sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.project h5 {
+  color: var(--highlight);
+  font-family: 'Consolas';
+  font-weight: lighter;
+  font-size: 1.25rem;
+  margin: 0;
 }
 
 .project-l .column-left {
@@ -46,6 +47,8 @@ p {
 }
 
 .project-l .project-tags ul li {
+  color: var(--primary-text);
+  font-family: 'Consolas';
   margin: 1rem 1.5rem;
 }
 
@@ -57,7 +60,7 @@ p {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #d3d3d3;
+  background-color: var(--background-secondary);
   padding: 1.5rem;
   z-index: 1;
 }
@@ -67,4 +70,5 @@ p {
   justify-content: flex-start;
   flex-direction: row;
   padding: 1rem;
+  color: var(--primary-text);
 }
