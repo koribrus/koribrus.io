@@ -9,13 +9,20 @@ const NavigationBar = () => {
         <li className='nav-item'>
           <a className='nav-link' href='/'>
             <span className='paranthesis'>( </span>
+            <span className='nav-bullet'>{'>> '}</span>
             about
             <span className='paranthesis'> )</span>
           </a>
+          {/* <a className='nav-link-b' href='/'>
+            <span className='paranthesis'>{'(  '}</span>
+            about
+            <span className='paranthesis'> )</span>
+          </a> */}
         </li>
         <li className='nav-item'>
           <a className='nav-link' href='/'>
             <span className='paranthesis'>( </span>
+            <span className='nav-bullet'>{'(> '}</span>
             projects
             <span className='paranthesis'> )</span>
           </a>
@@ -23,15 +30,14 @@ const NavigationBar = () => {
         <li className='nav-item'>
           <a className='nav-link' href='/'>
             <span className='paranthesis'>( </span>
+            <span className='nav-bullet'>{'>> '}</span>
             contact
             <span className='paranthesis'> )</span>
           </a>
         </li>
-        <li className='nav-item'>
-          <a className='nav-link' href='/'>
-            <span className='paranthesis'>( </span>
+        <li className='nav-item btn'>
+          <a className='nav-btn' href='/'>
             Resume
-            <span className='paranthesis'> )</span>
           </a>
         </li>
       </ul>
