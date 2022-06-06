@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/api', (req, res) => {
   res.status(200).json({
     status: 'success',
-    message: 'Hello from server',
+    message: 'Hello from API',
   });
 });
 

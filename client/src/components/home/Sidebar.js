@@ -2,10 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Sidebar.css';
-import logo1 from '../img/logos/kb-logo-v1.png';
-import logo2 from '../img/logos/kb-logo-v1-b.png';
-import logo3 from '../img/logos/kb-logo-v2.png';
-import logo4 from '../img/logos/kb-logo-v3.png';
+import logo1 from '../../img/logos/kb-logo-v1.png';
+import logo2 from '../../img/logos/kb-logo-v1-b.png';
+import logo3 from '../../img/logos/kb-logo-v2.png';
+import logo4 from '../../img/logos/kb-logo-v3.png';
 
 const Sidebar = () => {
   return (

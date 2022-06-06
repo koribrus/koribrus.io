@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import profileImg from './../img/kori-brus-profile.jpg';
+import profileImg from './../../img/kori-brus-profile.jpg';
 
 const About = () => {
   return (

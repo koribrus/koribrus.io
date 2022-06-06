@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './ProjectRight.css';
-import fotositeImg from './../img/koribrus-photography.png';
+import fotositeImg from './../../img/koribrus-photography.png';
 
 const ProjectRight = ({ project }) => {
   const renderTechTags = (array) => {
@@ -19,7 +19,7 @@ const ProjectRight = ({ project }) => {
       <div className='column-left'>
         <div className='project-img'>
           <a href='https://koribrus.photography/' rel='noreferrer' target='_blank'>
-            <img src={fotositeImg} alt='screenshot of koribrus.photography' />
+            <img src={fotositeImg} alt='website screenshot' />
           </a>
         </div>
         <div className='project-tags'>

@@ -1,8 +1,7 @@
 .project {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin-top: 1rem;
-  /* margin-bottom: 15rem; */
+  margin-bottom: 15rem;
   margin-right: 200px;
 }
 
@@ -33,11 +32,24 @@
   align-items: flex-end;
   grid-column: 6 / -1;
   grid-row: 1;
-  z-index: -1;
+  z-index: 1;
+}
+
+.project-l .project-img {
+  min-width: 750px;
+  max-height: 421.875px;
+  border-radius: 5px;
+  background-color: var(--highlight);
 }
 
 .project-l .project-img img {
   max-width: 750px;
+  opacity: 0.4;
+  transition: 0.5s ease opacity;
+}
+
+.project-l .project-img img:hover {
+  opacity: 1;
 }
 
 .project-l .project-tags ul {
@@ -62,7 +74,7 @@
   left: 0;
   background-color: var(--background-secondary);
   padding: 1.5rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .project-l .column-left .icons {

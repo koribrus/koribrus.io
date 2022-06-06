@@ -1,34 +1,20 @@
 import React from 'react';
-import NavigationBar from './NavigationBar';
-import Sidebar from './Sidebar';
-import Introduction from './Introduction';
-import About from './About';
-import Projects from './Projects';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
+import Home from './home/Home';
+import Resume from './resume/Resume';
 
 class App extends React.Component {
-  state = { message: 'test' };
-
-  componentDidMount() {
-    fetch('/api')
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data.message);
-        this.setState({ message: data.message });
-      });
-  }
-
   render() {
     return (
-      <div className='app-grid'>
-        <Sidebar className='item-a' />
-        <NavigationBar className='item-b' />
-        <div className='main-content item-c'>
-          <Introduction />
-          <About />
-          <Projects />
-        </div>
-      </div>
+      <React.Fragment>
+        <BrowserRouter>
+          <React.Fragment>
+            <Route path='/' exact component={Home} />
+            <Route path='/resume' component={Resume} />
+          </React.Fragment>
+        </BrowserRouter>
+      </React.Fragment>
     );
   }
 }

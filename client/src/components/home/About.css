@@ -11,7 +11,7 @@
 }
 
 .line {
-  background-color: var(--secondary-text) !important;
+  background-color: var(--secondary-text);
   width: 250px;
   height: 1px !important;
   transform: translateY(-50%);

@@ -1,7 +1,7 @@
 import React, { useEffect, useCallback } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { load } from '../redux/projects';
+import { load } from '../../redux/projects';
 
 import ProjectsHeader from './ProjectsHeader';
 import ProjectLeft from './ProjectLeft';

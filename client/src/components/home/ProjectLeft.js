@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './ProjectLeft.css';
-import fotositeImg from './../img/myBooks.png';
+import fotositeImg from './../../img/my-library.jpg';
 
 const ProjectLeft = ({ project }) => {
   const renderTechTags = (array) => {

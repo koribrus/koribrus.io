@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://use.typekit.net/ilx0mlo.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
 
 @font-face {
@@ -46,6 +46,12 @@
   --highlight: #ff9305;
   --primary-text: #96939f;
   --secondary-text: #cac9cf;
+  --gradient-1: rgba(34, 28, 54, 0.7);
+  --gradient-2: rgba(255, 147, 5, 0.7);
+  /* --resume-text-1: #716f70; */
+  --resume-text-1: #484747;
+  --resume-text-2: #dfdfe2;
+  --resume-text-3: #221c36;
 }
 
 * {
