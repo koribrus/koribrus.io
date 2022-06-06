@@ -8,31 +8,26 @@ const NavigationBar = () => {
       <ul className='nav-menu'>
         <li className='nav-item'>
           <a className='nav-link' href='/'>
-            <span className='paranthesis'>( </span>
-            <span className='nav-bullet'>{'>> '}</span>
+            <span className='nav-bullet'>{'>>'}</span>
+            <span className='paranthesis'>(</span>
             about
-            <span className='paranthesis'> )</span>
-          </a>
-          {/* <a className='nav-link-b' href='/'>
-            <span className='paranthesis'>{'(  '}</span>
-            about
-            <span className='paranthesis'> )</span>
-          </a> */}
-        </li>
-        <li className='nav-item'>
-          <a className='nav-link' href='/'>
-            <span className='paranthesis'>( </span>
-            <span className='nav-bullet'>{'(> '}</span>
-            projects
-            <span className='paranthesis'> )</span>
+            <span className='paranthesis paranthesis-r'>)</span>
           </a>
         </li>
         <li className='nav-item'>
           <a className='nav-link' href='/'>
-            <span className='paranthesis'>( </span>
-            <span className='nav-bullet'>{'>> '}</span>
+            <span className='nav-bullet'>{'>>'}</span>
+            <span className='paranthesis'>(</span>
+            <span clasName='nav-name'>projects</span>
+            <span className='paranthesis paranthesis-r'>)</span>
+          </a>
+        </li>
+        <li className='nav-item'>
+          <a className='nav-link' href='/'>
+            <span className='nav-bullet'>{'>>'}</span>
+            <span className='paranthesis'>(</span>
             contact
-            <span className='paranthesis'> )</span>
+            <span className='paranthesis paranthesis-r'>)</span>
           </a>
         </li>
         <li className='nav-item btn'>

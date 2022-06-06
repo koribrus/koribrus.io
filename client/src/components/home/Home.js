@@ -4,7 +4,6 @@ import Sidebar from './Sidebar';
 import Introduction from './Introduction';
 import About from './About';
 import Projects from './Projects';
-import Resume from '../resume/Resume';
 import './Home.css';
 
 class Home extends React.Component {
@@ -22,9 +21,9 @@ class Home extends React.Component {
   render() {
     return (
       <div className='app-grid'>
-        <Sidebar className='item-a' />
-        <NavigationBar className='item-b' />
-        <div className='main-content item-c'>
+        <Sidebar />
+        <NavigationBar />
+        <div className='main-content'>
           <Introduction />
           <About />
           <Projects />

@@ -144,6 +144,14 @@ const Resume = () => {
                 <h6>2020</h6>
               </div>
             </div>
+
+            <div className='school'>
+              <h5>Simon Fraser University</h5>
+              <div className='course'>
+                <p>Bachelor of Arts, Psychology</p>
+                <h6>2003</h6>
+              </div>
+            </div>
           </section>
 
           <section className='work'>
