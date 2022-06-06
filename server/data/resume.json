@@ -1,0 +1,151 @@
+{
+  "basics": {
+    "name": "Kori Brus",
+    "label": "Updated soon...",
+    "picture": "",
+    "email": "koribrus@pm.me",
+    "phone": "250 507 6892",
+    "website": "koribrus.io",
+    "summary": "Communications professional teaching English in Asia.",
+    "location": {
+      "address": "victoria, bc",
+      "postalCode": "V9A 3R6",
+      "city": "victoria",
+      "countryCode": "01",
+      "region": "canada"
+    },
+    "profiles": [
+      {
+        "network": "linkedIn",
+        "url": "https://www.linkedin.com/in/koribrus"
+      },
+      {
+        "network": "github",
+        "url": "https://github.com/koribrus"
+      },
+      {
+        "network": "instagram",
+        "url": "https://www.instagram.com/koribrus"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Cascadia Liquor",
+      "position": "Manager on Duty",
+      "website": "https://cascadialiquor.com/",
+      "date": "2018 — present",
+      "summary": "Supervising up to 5 staff members. Maintaining inventory and merchandising. Customer service and closing duties.",
+      "highlights": []
+    },
+    {
+      "company": "Jeollanamdo Office of Ed. - Suncheon High School",
+      "position": "Native English Teacher",
+      "website": "https://www.jne.go.kr/eng/main.do",
+      "date": "2015 — 2018",
+      "summary": "Designed and implemented curriculum and lessons for senior high school conversational English classes. Evaluated student speaking ability. Conducted workshops and professional development seminars for Korean teachers.",
+      "highlights": []
+    },
+    {
+      "company": "Good Works",
+      "position": "Philanthropic Counsel & Marketing Specialist",
+      "website": "https://www.goodworksco.ca/",
+      "date": "2011 — 2013",
+      "summary": "Delivered integrated direct response/comms programs for a 5-10 client portfolio that included UNHCR, CPAWS, Canadian Museum of Civilization Corporation, and Canadian Hunger Foundation. Managed client relationships, messages and branding, and strategy for various campaigns.",
+      "highlights": [],
+      "endDate": "2013-03-01"
+    },
+    {
+      "company": "Ecojustice Canada",
+      "position": "Director 0f Communications",
+      "website": "https://ecojustice.ca/",
+      "date": "2009 — 2011",
+      "summary": "Designed and implemented organization wide communication strategies and project specific media plans supporting scientific and legal campaigns. Secured national and local television, radio and print coverage including CTV, CBC, The Globe and Mail, The Canadian Press, and Canwest Media Group. Managed staff and coordinated campaigns across three offices (Toronto, Vancouver, Ottawa).",
+      "highlights": [],
+      "endDate": "2011-07-01"
+    },
+    {
+      "company": "Independent",
+      "position": "Marketing & Communications Consulting",
+      "website": "https://ecojustice.ca/",
+      "date": "2008 — 2009",
+      "summary": "Implemented marketing, communications, and web strategies for multiple projects including Web of Change social media conferred in Toronto, online strategy for Gregor Robertson and Vision Vancouver’s 2008 election campaign and focus groups for McAllister Opinion Research.",
+      "highlights": [],
+      "endDate": "2009-05-01"
+    },
+    {
+      "company": "Ecojustice Canada",
+      "position": "Direct Response Manager",
+      "website": "",
+      "date": "2003 — 2007",
+      "summary": "Managed a $2 million direct response program. Coordinated market research and graphic design of the organization’s rebranding campaign. Managed project budgets and managed multiple suppliers and contractors.",
+      "highlights": [],
+      "endDate": "2007-11-01"
+    },
+    {
+      "company": "Greater Vancouver Food Bank Society",
+      "position": "Director of Development & Communications (Acting)",
+      "website": "https://foodbank.bc.ca/",
+      "date": "2002 — 2003",
+      "summary": "Created and implemented strategies for seasonal fundraising campaigns. Secured corporate and media sponsorships. Launched coordinated television, radio and public events alongside successful direct mail campaigns.",
+      "highlights": [],
+      "endDate": "2003-02-01"
+    },
+    {
+      "company": "Greater Vancouver Food Bank Society",
+      "position": "Communications Coordinator",
+      "website": "https://foodbank.bc.ca/",
+      "date": "2002",
+      "summary": "Managed direct mail program. Wrote web content, media releases, newsletters, and grant applications. Coordinated website redesign and branding.",
+      "highlights": [],
+      "endDate": "2002-10-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "udemy",
+      "area": "computer science",
+      "studyType": "Online course",
+      "startDate": "",
+      "gpa": "",
+      "courses": [
+        {
+          "course": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2022 (ongoing)",
+          "year": 2022
+        },
+        { "course": "Modern React with Redux", "year": 2022 },
+        { "course": "JavaScript: Understanding the Weird Parts", "year": 2022 },
+        { "course": "Modern JavaScript from the Beginning", "year": 2022 },
+        { "course": "The Complete JavaScript Course", "year": 2022 },
+        { "course": "Modern HTML & CSS from the Beginning", "year": 2022 }
+      ],
+      "endDate": ""
+    },
+    {
+      "institution": "codecademy",
+      "area": "computer science",
+      "studyType": "Online course",
+      "startDate": "",
+      "gpa": "",
+      "courses": [
+        {
+          "course": "Build a Website with HTML, CSS, and Github Pages",
+          "year": 2021
+        },
+        { "course": "Learn Responsive Design, CSS & HTML (3 courses)", "year": 2021 },
+        { "course": "Learn the Command Line", "year": 2020 },
+        { "course": "Learn Python 3", "year": 2020 }
+      ],
+      "endDate": ""
+    },
+    {
+      "institution": "Simon Fraser University",
+      "area": "",
+      "studyType": "Bachelor of Arts",
+      "startDate": "1993-12-31",
+      "gpa": "",
+      "courses": [{ "course": "Bachelor of Arts, Psychology", "year": 2013 }],
+      "endDate": "2002-12-31"
+    }
+  ]
+}
