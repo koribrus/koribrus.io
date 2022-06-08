@@ -10,6 +10,8 @@ app.use(express.json());
 
 // * ---------- VARIABLES ----------
 const projects = JSON.parse(fs.readFileSync(`${__dirname}/./data/projects.json`));
+const resume = JSON.parse(fs.readFileSync(`${__dirname}/./data/resume.json`));
+const linkedIn = JSON.parse(fs.readFileSync(`${__dirname}/./data/resumeLinkedIn.json`));
 
 // * ---------- ROUTES ----------
 app.get('/', (req, res) => {
@@ -28,6 +30,25 @@ app.get('/api/projects', (req, res) => {
     status: 'success',
     data: {
       projects,
+    },
+  });
+});
+
+app.get('/api/resume', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    data: {
+      resume,
+    },
+  });
+});
+
+// test route for resume data
+app.get('/api/linkedin', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    data: {
+      linkedIn,
     },
   });
 });

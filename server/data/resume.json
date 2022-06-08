@@ -1,6 +1,6 @@
 {
   "basics": {
-    "name": "Kori Brus",
+    "name": "kori brus",
     "label": "Updated soon...",
     "picture": "",
     "email": "koribrus@pm.me",
@@ -29,6 +29,7 @@
       }
     ]
   },
+
   "work": [
     {
       "company": "Cascadia Liquor",
@@ -57,7 +58,7 @@
     },
     {
       "company": "Ecojustice Canada",
-      "position": "Director 0f Communications",
+      "position": "Director of Communications",
       "website": "https://ecojustice.ca/",
       "date": "2009 — 2011",
       "summary": "Designed and implemented organization wide communication strategies and project specific media plans supporting scientific and legal campaigns. Secured national and local television, radio and print coverage including CTV, CBC, The Globe and Mail, The Canadian Press, and Canwest Media Group. Managed staff and coordinated campaigns across three offices (Toronto, Vancouver, Ottawa).",
@@ -84,7 +85,7 @@
     },
     {
       "company": "Greater Vancouver Food Bank Society",
-      "position": "Director of Development & Communications (Acting)",
+      "position": "Director of Development & Communications (acting)",
       "website": "https://foodbank.bc.ca/",
       "date": "2002 — 2003",
       "summary": "Created and implemented strategies for seasonal fundraising campaigns. Secured corporate and media sponsorships. Launched coordinated television, radio and public events alongside successful direct mail campaigns.",
@@ -101,6 +102,7 @@
       "endDate": "2002-10-01"
     }
   ],
+
   "education": [
     {
       "institution": "udemy",

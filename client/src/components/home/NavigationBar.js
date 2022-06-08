@@ -18,7 +18,7 @@ const NavigationBar = () => {
           <a className='nav-link' href='/'>
             <span className='nav-bullet'>{'>>'}</span>
             <span className='paranthesis'>(</span>
-            <span clasName='nav-name'>projects</span>
+            <span className='nav-name'>projects</span>
             <span className='paranthesis paranthesis-r'>)</span>
           </a>
         </li>

@@ -1,0 +1,352 @@
+{
+  "basics": {
+    "name": "Kori Brus",
+    "label": "Updated soon...",
+    "picture": "",
+    "email": "",
+    "website": "http://koribrus.com]",
+    "summary": "Communications professional teaching English in Asia.",
+    "location": {
+      "address": "",
+      "postalCode": "V9A 3R6",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "koribrus",
+        "url": "https://twitter.com/koribrus"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Cascadia Liquor - Uptown",
+      "position": "Manager on Duty",
+      "website": "",
+      "startDate": "2018-12-01",
+      "summary": "Supervising up to 5 staff members. Maintaining inventory and merchandising. Customer service and closing duties.",
+      "highlights": []
+    },
+    {
+      "company": "Jeollanamdo Office of Education - Suncheon High School",
+      "position": "Native English Teacher",
+      "website": "",
+      "startDate": "2015-08-01",
+      "summary": "Designed and implemented curriculum and lessons for senior high school conversational English classes. Evaluated student speaking ability. Conducted workshops and professional development seminars for Korean teachers.",
+      "highlights": []
+    },
+    {
+      "company": "PGIC Canada",
+      "position": "Substitute Teacher",
+      "website": "",
+      "startDate": "2015-02-01",
+      "summary": "",
+      "highlights": [],
+      "endDate": "2015-07-01"
+    },
+    {
+      "company": "Good Works",
+      "position": "Philanthropic Counsel & Marketing Specialist",
+      "website": "",
+      "startDate": "2011-07-01",
+      "summary": "Delivered integrated direct response/communications programs for a 5-10 client portfolio that included UNHCR, CPAWS, Canadian Museum of Civilization Corporation, and Canadian Hunger Foundation. Managed client relationships, messages and branding, and program strategy for various campaigns.",
+      "highlights": [],
+      "endDate": "2013-03-01"
+    },
+    {
+      "company": "Ecojustice Canada",
+      "position": "Director Of Communications",
+      "website": "",
+      "startDate": "2009-05-01",
+      "summary": "Designed and implemented organization wide communication strategies and project specific media plans supporting scientific and legal campaigns. Secured national and local television, radio and print coverage including CTV, CBC, The Globe and Mail, The Canadian Press, and Canwest Media Group. Managed staff and coordinated campaigns across three offices (Toronto, Vancouver, Ottawa).",
+      "highlights": [],
+      "endDate": "2011-07-01"
+    },
+    {
+      "company": "Independent",
+      "position": "Marketing & Communications Consulting",
+      "website": "",
+      "startDate": "2008-09-01",
+      "summary": "Implemented marketing, communications, and web strategies for multiple projects including Web of Change social media conferred in Toronto, online strategy for Gregor Robertson and Vision Vancouver’s 2008 election campaign and focus groups for McAllister Opinion Research.",
+      "highlights": [],
+      "endDate": "2009-05-01"
+    },
+    {
+      "company": "Ecojustice Canada",
+      "position": "Direct Response Manager",
+      "website": "",
+      "startDate": "2003-06-01",
+      "summary": "Managed a $2 million direct response program. Coordinated market research and graphic design of the organization’s rebranding campaign. Managed project budgets and managed multiple suppliers and contractors.",
+      "highlights": [],
+      "endDate": "2007-11-01"
+    },
+    {
+      "company": "Greater Vancouver Food Bank Society",
+      "position": "Director of Development & Communications (Acting)",
+      "website": "",
+      "startDate": "2002-10-01",
+      "summary": "Created and implemented strategies for seasonal fundraising campaigns. Secured corporate and media sponsorships. Launched coordinated television, radio and public events alongside successful direct mail campaigns.",
+      "highlights": [],
+      "endDate": "2003-02-01"
+    },
+    {
+      "company": "Greater Vancouver Food Bank Society",
+      "position": "Communications Coordinator",
+      "website": "",
+      "startDate": "2002-04-01",
+      "summary": "Managed direct mail program. Wrote web content, media releases, newsletters, and grant applications. Coordinated website redesign and branding.",
+      "highlights": [],
+      "endDate": "2002-10-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "VIA Training Centre",
+      "area": "",
+      "studyType": "TESL / TESOL Pro 270 Diploma Program",
+      "startDate": "2014-12-31",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2014-12-31"
+    },
+    {
+      "institution": "",
+      "area": "",
+      "studyType": "Bachelor of Arts",
+      "startDate": "1993-12-31",
+      "gpa": "",
+      "courses": [],
+      "endDate": "2002-12-31"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Writing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Budgeting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Data Analysis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Online Communications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Campaign Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Supervisory Skills",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Online Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Client Relations",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "English as a Second Language (ESL)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Lesson Planning",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Communication",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Customer Service",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Retail Sales",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Strategic Communications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Fundraising",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Media Relations",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Marketing Communications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Social Media",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Volunteer Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Nonprofits",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Press Releases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Non-profits",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Blogging",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web Content",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Public Speaking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Copywriting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Integrated Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Direct Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Editing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Facebook",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Email Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Proposal Writing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Strategy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Copy Editing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Report Writing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Online Advertising",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Community Outreach",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Advertising",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Marketing Strategy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Teaching",
+      "level": "",
+      "keywords": []
+    }
+  ]
+}
