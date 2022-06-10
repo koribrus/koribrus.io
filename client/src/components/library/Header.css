@@ -1,0 +1,91 @@
+.header-lib {
+  background-color: var(--primary-bg-lib);
+  height: 35vh;
+}
+
+.header-lib h1 {
+  font-size: 2rem;
+}
+
+.navbar-lib {
+  height: 7vh;
+}
+
+.navbar-top {
+  background-color: var(--secondary-text-lib);
+  width: 100vw;
+  height: 0.5vh;
+}
+
+.navbar-content-lib {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 6.5vh;
+}
+
+.navbar-logo-lib {
+  text-decoration: none;
+  transition: 0.25s ease all;
+}
+
+.navbar-logo-lib p {
+  margin: 0;
+}
+
+.navbar-logo-lib:hover p {
+  color: var(--tertiary-bg-hover);
+  opacity: 0.9;
+}
+
+.navbar-content-lib p {
+  color: var(--primary-text-lib);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+}
+
+.banner-lib {
+  position: relative;
+  height: 28vh;
+  background-image: url('../../img/glasses-old-books-desk.jpg');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay-lib {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background: rgba(52, 61, 66, 0.6);
+}
+
+.banner-lib h1 {
+  color: var(--tertiary-text-lib);
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  padding: 0.5rem 0;
+}
+
+.banner-lib p {
+  color: var(--tertiary-text-lib);
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.7rem;
+}
+
+.banner-content-lib {
+  max-width: 400px;
+}

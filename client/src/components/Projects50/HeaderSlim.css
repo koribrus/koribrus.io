@@ -1,0 +1,93 @@
+.header-p {
+  background-color: #f7f5f6;
+  height: 25vh;
+}
+
+.header-p h1 {
+  font-size: 2rem;
+}
+
+.navbar-lib {
+  height: 7vh;
+}
+
+.navbar-top-p {
+  background-color: #7a7a7a;
+  width: 100vw;
+  height: 0.5vh;
+}
+
+.navbar-content-p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 6.5vh;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  transition: 0.25s ease all;
+}
+
+.navbar-logo-p p {
+  color: #141414;
+  margin: 0;
+}
+
+.navbar-logo-p:hover p {
+  color: #7a7a7a;
+  /* color: #b7afac; */
+  opacity: 0.9;
+}
+
+.navbar-content-p p {
+  color: var(--primary-text-lib);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+}
+
+.banner-p {
+  position: relative;
+  height: 18vh;
+  background-image: url('../../img/50projects-trial.jpg');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay-p {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  background: rgba(76, 76, 76, 0.6);
+}
+
+.banner-p h1 {
+  color: var(--tertiary-text-lib);
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  padding: 0.5rem 0;
+}
+
+.banner-p p {
+  color: var(--tertiary-text-lib);
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.7rem;
+}
+
+/* .banner-content {
+  max-width: 400px;
+} */
