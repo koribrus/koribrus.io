@@ -7,6 +7,7 @@
   font-size: 2rem;
 }
 
+/* ----- NAVBAR ----- */
 .navbar-lib {
   height: 7vh;
 }
@@ -19,11 +20,12 @@
 
 .navbar-content-p {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 6.5vh;
 }
 
+/* ----- navbar logo ----- */
 .navbar-logo {
   text-decoration: none;
   transition: 0.25s ease all;
@@ -36,12 +38,11 @@
 
 .navbar-logo-p:hover p {
   color: #7a7a7a;
-  /* color: #b7afac; */
   opacity: 0.9;
 }
 
 .navbar-content-p p {
-  color: var(--primary-text-lib);
+  color: #141414;
   font-family: proxima-nova, sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -49,6 +50,66 @@
   padding: 0 4rem;
 }
 
+/* ----- MENU --------------- */
+/* ----- selector ----- */
+.apps-menu {
+  width: 400px;
+  padding: 0 4rem;
+  z-index: 1;
+}
+
+.apps-menu-cntrl {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apps-menu-cntrl h4 {
+  color: #141414;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.apps-menu-line {
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #141414;
+}
+
+/* ----- dropdown ----- */
+.dropdown-container {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: height ease 1s;
+}
+
+.apps-dropdown {
+  background-color: #b7afac;
+  /* width: 300px; */
+  font-family: proxima-nova, sans-serif;
+  list-style-position: inside;
+  /* list-style: none; */
+  padding-top: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
+}
+
+.apps-dropdown a {
+  font-family: proxima-nova, sans-serif;
+  color: #141414;
+  cursor: pointer;
+}
+
+.apps-dropdown-item {
+  padding: 0.5rem;
+  border-bottom: 1px dotted #4c4c4c;
+}
+
+/* ----- banner ----- */
 .banner-p {
   position: relative;
   height: 18vh;
@@ -87,7 +148,3 @@
   letter-spacing: 0.5px;
   margin-bottom: 0.7rem;
 }
-
-/* .banner-content {
-  max-width: 400px;
-} */

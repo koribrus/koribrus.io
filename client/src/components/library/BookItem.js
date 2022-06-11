@@ -6,15 +6,15 @@ const BookItem = ({ book, onBookSelect, current }) => {
   return (
     <div className='slide-lib' style={{ transform: `translateX(${-current * 100}%)` }}>
       <div className='card-lib' onClick={() => onBookSelect(book)}>
-        <a className='image-lib' href={book.volumeInfo.infoLink} rel='noreferrer' target='_blank'>
+        <div className='image-lib'>
           <img src={book.volumeInfo.imageLinks.thumbnail} alt='reading glasses and books on desk' />
-        </a>
+        </div>
         <div className='content-lib'>
           <a
             className='book-title'
             href={book.volumeInfo.infoLink}
-            rel='noreferrer'
             target='_blank'
+            rel='noopener noreferrer'
           >
             {book.volumeInfo.title.split(':')[0]}
           </a>

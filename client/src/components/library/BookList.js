@@ -3,9 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
 import CarouselControls from './CarouselControls';
 import { select } from '../../redux/books';
-// import { select } from '../redux/books';
 import { setCurrent } from '../../redux/slides';
-// import { setCurrent } from '../redux/slides';
 import './BookList.css';
 
 const BookList = () => {
@@ -41,21 +39,18 @@ const BookList = () => {
     console.log(adjustment);
     const index = current > 0 - adjustment ? current - 1 : current;
     dispatch(setCurrent(index));
-    console.log(index);
   };
 
   const next = () => {
     const adjustment = Math.floor(books.length / 2);
     const index = current < books.length - 1 - adjustment ? current + 1 : current;
     dispatch(setCurrent(index));
-    console.log(index);
   };
 
   return (
     <div className='list-lib'>
       <div className='carousel'>
         {renderBooks()}
-
         <div className='overlay-left'></div>
         <div className='overlay-right'></div>
       </div>

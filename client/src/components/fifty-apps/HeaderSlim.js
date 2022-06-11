@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Menu from './Menu';
 import './HeaderSlim.css';
 
 const HeaderSlim = () => {
@@ -10,6 +11,16 @@ const HeaderSlim = () => {
           <a className='navbar-logo-p' href='https://koribrus.io'>
             <p>koribrus.io</p>
           </a>
+          <Menu>
+            <ol type='1' className='apps-dropdown'>
+              <li className='apps-dropdown-item'>
+                <a href='/'>expanding cards</a>
+              </li>
+              <li className='apps-dropdown-item'>
+                <a href='/'>progress steps</a>
+              </li>
+            </ol>
+          </Menu>
         </div>
       </div>
       <div className='banner-p'>

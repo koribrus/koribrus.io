@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Home from './home/Home';
 import Resume from './resume/Resume';
-import projects50 from './projects50/Projects50';
+import FiftyApps from './fifty-apps/FiftyApps';
 import Library from './library/Library';
 
 class App extends React.Component {
@@ -13,8 +13,8 @@ class App extends React.Component {
           <React.Fragment>
             <Route path='/' exact component={Home} />
             <Route path='/resume' component={Resume} />
-            <Route path='/react-projects' component={projects50} />
             <Route path='/library' component={Library} />
+            <Route path='/fifty-apps' component={FiftyApps} />
           </React.Fragment>
         </BrowserRouter>
       </React.Fragment>
