@@ -3,6 +3,7 @@ import Menu from './Menu';
 import './HeaderSlim.css';
 
 const HeaderSlim = () => {
+  // ! move open/close dropdown state from Menu to redux. Once there, set conditional box shadow on .apps-dropdown to ensure shadow isn't visible on 'close' state.
   return (
     <div className='header-p'>
       <div className='navbar-lib'>
@@ -12,14 +13,37 @@ const HeaderSlim = () => {
             <p>koribrus.io</p>
           </a>
           <Menu>
-            <ol type='1' className='apps-dropdown'>
+            <ul type='1' className='apps-dropdown'>
               <li className='apps-dropdown-item'>
+                <span className='dropdown-count'>1</span>
                 <a href='/'>expanding cards</a>
               </li>
               <li className='apps-dropdown-item'>
+                <span className='dropdown-count'>2</span>
                 <a href='/'>progress steps</a>
               </li>
-            </ol>
+              <li className='apps-dropdown-item'>
+                <span className='dropdown-count'>3</span>
+                <a href='/' className='coming-soon'>
+                  <span>rotating nav</span>
+                  <span>(coming soon)</span>
+                </a>
+              </li>
+              <li className='apps-dropdown-item'>
+                <span className='dropdown-count'>4</span>
+                <a href='/' className='coming-soon'>
+                  <span>hidden search</span>
+                  <span>(coming soon)</span>
+                </a>
+              </li>
+              <li className='apps-dropdown-item'>
+                <span className='dropdown-count'>5</span>
+                <a href='/' className='coming-soon'>
+                  <span>blurry loading</span>
+                  <span>(coming soon)</span>
+                </a>
+              </li>
+            </ul>
           </Menu>
         </div>
       </div>
