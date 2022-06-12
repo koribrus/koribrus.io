@@ -50,7 +50,7 @@ const HeaderSlim = () => {
       <div className='banner-p'>
         <div className='overlay-p'>
           <div className='banner-content'>
-            <h1 className='banner-title'>The Library</h1>
+            <h1 className='banner-title'>50 react apps</h1>
             <p className='banner-text'></p>
           </div>
         </div>

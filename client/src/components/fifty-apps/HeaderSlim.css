@@ -27,10 +27,10 @@
 }
 
 /* ----- navbar logo ----- */
-.navbar-logo {
+/* .navbar-logo {
   text-decoration: none;
   transition: 0.25s ease all;
-}
+} */
 
 .navbar-logo-p p {
   color: #141414;
@@ -69,7 +69,7 @@
 .apps-menu-cntrl h4 {
   color: #141414;
   font-family: proxima-nova, sans-serif;
-  font-size: normal;
+  font-size: 1rem;
   font-weight: 100;
   font-style: normal;
 }
@@ -153,7 +153,7 @@
 .banner-p {
   position: relative;
   height: 18vh;
-  background-image: url('../../img/50projects-trial.jpg');
+  background-image: url('../../img/keyboard.jpg');
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;

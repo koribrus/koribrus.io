@@ -5,7 +5,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './ProjectRight.css';
 import fotositeImg from './../../img/koribrus-photography.png';
 
-const ProjectRight = ({ project }) => {
+const ProjectRight = ({ project, img, alt }) => {
   const renderTechTags = (array) => {
     const techTags = array.map((item, index) => {
       return <li key={index}>{item}</li>;
@@ -19,7 +19,7 @@ const ProjectRight = ({ project }) => {
       <div className='column-left'>
         <div className='project-img'>
           <a href='https://koribrus.photography/' rel='noreferrer' target='_blank'>
-            <img src={fotositeImg} alt='website screenshot' />
+            <img src={`img/${project.img}`} alt={project.alt} />
           </a>
         </div>
         <div className='project-tags'>
