@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { load } from '../../redux/projects';
 
-import ProjectsHeader from './ProjectsHeader';
+import Header from './Header';
 import ProjectLeft from './ProjectLeft';
 import ProjectRight from './ProjectRight';
 
@@ -37,7 +37,7 @@ const Projects = () => {
 
   return (
     <React.Fragment>
-      <ProjectsHeader />
+      <Header heading='projects' />
       {renderProjects(projects)}
     </React.Fragment>
   );

@@ -34,15 +34,17 @@
 
 .project-r .project-img {
   min-width: 750px;
-  max-height: 421.875px;
+  /* max-height: 421.875px; */
   border-radius: 5px;
   background-color: var(--highlight);
 }
 
 .project-r .project-img img {
+  display: block;
   max-width: 750px;
   opacity: 0.4;
   transition: 0.5s ease opacity;
+  border-radius: 5px;
 }
 
 .project-r .project-img img:hover {

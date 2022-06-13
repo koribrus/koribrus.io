@@ -4,20 +4,6 @@
   padding: 0 7.5rem;
 }
 
-.about-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.line {
-  background-color: var(--secondary-text);
-  width: 250px;
-  height: 1px !important;
-  transform: translateY(-50%) !important;
-  margin-left: 0.5rem;
-}
-
 .about-content {
   display: flex;
 }
@@ -35,10 +21,11 @@
 .profile-img-bg {
   border-radius: 5px;
   background-color: var(--highlight);
-  max-height: 350px;
+  /* max-height: 350px; */
 }
 
 .profile-img {
+  display: block;
   max-width: 350px;
   border-radius: 5px;
   opacity: 0.4;

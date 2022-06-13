@@ -1,1 +1,45 @@
+.contact {
+  margin-right: 15rem;
+  margin-bottom: 15rem;
+  padding: 0 7.5rem;
+}
 
+.contact-content {
+  display: flex;
+}
+
+.contact-text {
+  min-width: 370px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.img-container {
+  padding: 1rem;
+}
+
+.contact-img-bg {
+  border-radius: 5px;
+  background-color: var(--highlight);
+}
+
+.contact-img {
+  display: block;
+  max-width: 350px;
+  border-radius: 5px;
+  opacity: 0.4;
+  transition: 0.5s ease opacity;
+}
+
+.contact-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-btn {
+  font-size: 0.9rem;
+  font-weight: 200 !important;
+  padding: 1rem 2rem;
+  transition: 1s ease all;
+}

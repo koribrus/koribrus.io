@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectsHeader from './ProjectsHeader';
+import Header from './Header';
 import Skills from './Skills';
 import './About.css';
 import profileImg from './../../img/kori-brus-profile.jpg';
@@ -7,7 +7,7 @@ import profileImg from './../../img/kori-brus-profile.jpg';
 const About = () => {
   return (
     <div className='about'>
-      <ProjectsHeader />
+      <Header heading='about' />
       {/* <div className='about-header'>
         <h3>about</h3>
         <div className='line'></div>
