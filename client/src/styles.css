@@ -45,6 +45,7 @@
   --background-primary: #221c36;
   --background-secondary: #322a50;
   --highlight: #ff9305;
+  --darklight: #1f1b15;
   --primary-text: #96939f;
   --secondary-text: #cac9cf;
   --gradient-1: rgba(34, 28, 54, 0.7);
@@ -98,6 +99,12 @@ h4 {
   font-size: 1.05rem;
   font-weight: lighter;
   color: var(--highlight);
+}
+
+h5 {
+  color: var(--secondary-text);
+  font-family: 'Segoe UI Variable semi-bold', sans-serif;
+  font-size: 1.5rem;
 }
 
 p {

@@ -14,7 +14,7 @@
   background-color: var(--secondary-text);
   width: 250px;
   height: 1px !important;
-  transform: translateY(-50%);
+  transform: translateY(-50%) !important;
   margin-left: 0.5rem;
 }
 
@@ -23,6 +23,7 @@
 }
 
 .profile-text {
+  min-width: 370px;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }

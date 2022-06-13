@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 import Introduction from './Introduction';
 import About from './About';
 import Projects from './Projects';
+import Contact from './Contact';
 import './Home.css';
 
 class Home extends React.Component {
@@ -27,6 +28,7 @@ class Home extends React.Component {
           <Introduction />
           <About />
           <Projects />
+          <Contact />
         </div>
       </div>
     );

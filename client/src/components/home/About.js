@@ -1,14 +1,17 @@
 import React from 'react';
+import ProjectsHeader from './ProjectsHeader';
+import Skills from './Skills';
 import './About.css';
 import profileImg from './../../img/kori-brus-profile.jpg';
 
 const About = () => {
   return (
     <div className='about'>
-      <div className='about-header'>
+      <ProjectsHeader />
+      {/* <div className='about-header'>
         <h3>about</h3>
         <div className='line'></div>
-      </div>
+      </div> */}
       <div className='about-content'>
         <div className='profile-text'>
           <p>
@@ -30,28 +33,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className='about-graph'>
-        <div className='graph-section'>
-          <h5>HTML/CSS</h5>
-          <div className='graph-line'></div>
-        </div>
-        <div className='graph-section'>
-          <h5>JavaScript</h5>
-          <div className='graph-line'></div>
-        </div>
-        <div className='graph-section'>
-          <h5>React</h5>
-          <div className='graph-line'></div>
-        </div>
-        <div className='graph-section'>
-          <h5>Redux</h5>
-          <div className='graph-line'></div>
-        </div>
-        <div className='graph-section'>
-          <h5>Node.js</h5>
-          <div className='graph-line'></div>
-        </div>
-      </div>
+      <Skills />
     </div>
   );
 };
