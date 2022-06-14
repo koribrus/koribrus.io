@@ -93,6 +93,7 @@
 
 .apps-dropdown {
   background: linear-gradient(to bottom, #f7f5f666, #b7afac);
+  color: #4c4c4c;
   width: 272px;
   font-family: proxima-nova, sans-serif;
   /* list-style-position: inside; */

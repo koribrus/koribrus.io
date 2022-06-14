@@ -1,19 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './ProjectRight.css';
-import fotositeImg from './../../img/koribrus-photography.png';
 
-const ProjectRight = ({ project, img, alt }) => {
-  const renderTechTags = (array) => {
-    const techTags = array.map((item, index) => {
-      return <li key={index}>{item}</li>;
-    });
-
-    return techTags;
-  };
-
+const ProjectRight = ({ project, link, tags }) => {
   return (
     <div className='project project-r'>
       <div className='column-left'>
@@ -23,7 +13,7 @@ const ProjectRight = ({ project, img, alt }) => {
           </a>
         </div>
         <div className='project-tags'>
-          <ul>{renderTechTags(project.technologies)}</ul>
+          <ul>{tags(project.technologies)}</ul>
         </div>
       </div>
       <div className='column-right'>
@@ -35,9 +25,7 @@ const ProjectRight = ({ project, img, alt }) => {
           <a href={project.gitURL} rel='noreferrer' target='_blank'>
             <FontAwesomeIcon icon={faGithub} className='icon' />
           </a>
-          <a href={project.URL} rel='noreferrer' target='_blank'>
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='icon' />
-          </a>
+          {link(project)}
         </div>
         <div
           className='project-content'

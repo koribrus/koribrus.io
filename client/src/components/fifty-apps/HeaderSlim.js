@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Menu from './Menu';
 import './HeaderSlim.css';
 
@@ -9,19 +10,23 @@ const HeaderSlim = () => {
       <div className='navbar-lib'>
         <div className='navbar-top-p'></div>
         <div className='navbar-content-p'>
-          <a className='navbar-logo-p' href='https://koribrus.io'>
+          <Link className='navbar-logo-p' to='/'>
             <p>koribrus.io</p>
-          </a>
+          </Link>
           <Menu>
             <ul type='1' className='apps-dropdown'>
-              <li className='apps-dropdown-item'>
-                <span className='dropdown-count'>1</span>
-                <a href='/'>expanding cards</a>
-              </li>
-              <li className='apps-dropdown-item'>
-                <span className='dropdown-count'>2</span>
-                <a href='/'>progress steps</a>
-              </li>
+              <Link to='/fifty-apps/1'>
+                <li className='apps-dropdown-item'>
+                  <span className='dropdown-count'>1</span>
+                  expanding cards
+                </li>
+              </Link>
+              <Link to='/fifty-apps/2'>
+                <li className='apps-dropdown-item'>
+                  <span className='dropdown-count'>2</span>
+                  progress steps
+                </li>
+              </Link>
               <li className='apps-dropdown-item'>
                 <span className='dropdown-count'>3</span>
                 <a href='/' className='coming-soon'>

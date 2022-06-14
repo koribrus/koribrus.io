@@ -2,7 +2,6 @@ import React from 'react';
 import './BookItem.css';
 
 const BookItem = ({ book, onBookSelect, current }) => {
-  console.log(book);
   return (
     <div className='slide-lib' style={{ transform: `translateX(${-current * 100}%)` }}>
       <div className='card-lib' onClick={() => onBookSelect(book)}>

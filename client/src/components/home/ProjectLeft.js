@@ -1,18 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import './ProjectLeft.css';
 
-const ProjectLeft = ({ project, img, alt }) => {
-  const renderTechTags = (array) => {
-    const techTags = array.map((item, index) => {
-      return <li key={index}>{item}</li>;
-    });
-
-    return techTags;
-  };
-
+const ProjectLeft = ({ project, link, tags }) => {
   return (
     <div className='project project-l'>
       <div className='column-left'>
@@ -21,8 +12,10 @@ const ProjectLeft = ({ project, img, alt }) => {
           <h4>{project.header[1]}</h4>
         </div>
         <div className='icons'>
-          <FontAwesomeIcon icon={faGithub} className='icon' />
-          <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='icon' />
+          <a href={project.gitURL} rel='noreferrer' target='_blank'>
+            <FontAwesomeIcon icon={faGithub} className='icon' />
+          </a>
+          {link(project)}
         </div>
         <div
           className='project-content'
@@ -37,7 +30,7 @@ const ProjectLeft = ({ project, img, alt }) => {
           </a>
         </div>
         <div className='project-tags'>
-          <ul>{renderTechTags(project.technologies)}</ul>
+          <ul>{tags(project.technologies)}</ul>
         </div>
       </div>
     </div>

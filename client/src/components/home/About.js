@@ -7,11 +7,7 @@ import profileImg from './../../img/kori-brus-profile.jpg';
 const About = () => {
   return (
     <div className='about'>
-      <Header heading='about' />
-      {/* <div className='about-header'>
-        <h3>about</h3>
-        <div className='line'></div>
-      </div> */}
+      <Header id='about' heading='about' />
       <div className='about-content'>
         <div className='profile-text'>
           <p>
