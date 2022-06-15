@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
   const smoothScroll = (e, section) => {
     e.preventDefault();
-    // console.log(e);
-    // console.log(section);
+    window.history.replaceState(null, '', `/${section}`);
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
   };
 

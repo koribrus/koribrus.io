@@ -1,12 +1,43 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { setAbout } from '../../redux/visibility';
 import Header from './Header';
 import Skills from './Skills';
 import './About.css';
 import profileImg from './../../img/kori-brus-profile.jpg';
 
 const About = () => {
+  // const [elVisible, setElVisible] = useState(null);
+
+  // * redux store test
+  const { aboutVisible } = useSelector((state) => state.visibility);
+  const aboutRef = useRef();
+  const dispatch = useDispatch();
+
+  console.log(aboutVisible);
+
+  useEffect(() => {
+    const revealSection = (entries) => {
+      const [entry] = entries;
+      if (!entry.isIntersecting) return;
+      // setElVisible(entry.isIntersecting);
+
+      dispatch(setAbout(entry.isIntersecting));
+
+      observer.unobserve(aboutRef.current);
+    };
+
+    const observer = new IntersectionObserver(revealSection, {
+      root: null,
+      threshold: 0.15,
+    });
+
+    observer.observe(aboutRef.current);
+  }, []);
+
   return (
-    <div className='about'>
+    <div ref={aboutRef} className={aboutVisible ? 'about' : 'about about--hidden'}>
+      {/* <div ref={aboutRef} className='about about--hidden'> */}
       <Header id='about' heading='about' />
       <div className='about-content'>
         <div className='profile-text'>

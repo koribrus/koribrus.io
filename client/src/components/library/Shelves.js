@@ -4,9 +4,6 @@ import ShelfButton from './ShelfButton';
 import { fetchBooks } from '../../redux/books';
 import { activate } from '../../redux/shelves';
 import { setCurrent } from '../../redux/slides';
-// import { fetchBooks } from '../redux/books';
-// import { activate } from '../redux/shelves';
-// import { setCurrent } from '../redux/slides';
 import './Shelves.css';
 
 const Shelves = () => {

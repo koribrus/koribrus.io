@@ -2,6 +2,12 @@
   margin-bottom: 20rem;
   margin-right: 15rem;
   padding: 0 7.5rem;
+  transition: transform 1s, opacity 1s;
+}
+
+.about--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .about-content {
