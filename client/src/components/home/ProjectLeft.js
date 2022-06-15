@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useSelector } from 'react-redux';
+import useObserver from '../../hooks/useObserver';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './ProjectLeft.css';
 
-const ProjectLeft = ({ project, link, tags }) => {
+const ProjectLeft = ({ project, link, tags, index, action }) => {
+  const state = useSelector((state) => state.visibility);
+  const ref = useRef();
+
+  const projectState = state[`project${index + 1}Visible`];
+
+  useObserver(ref, action);
+
   return (
-    <div className='project project-l'>
+    <div
+      ref={ref}
+      className={projectState ? 'project project-l' : 'project project-l project--hidden'}
+    >
       <div className='column-left'>
         <div className='project-heading'>
           <h5>{project.header[0]}</h5>

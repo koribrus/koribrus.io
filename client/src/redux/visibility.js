@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   aboutVisible: false,
+  projectsVisible: false,
   project1Visible: false,
   project2Visible: false,
   project3Visible: false,
@@ -14,6 +15,9 @@ export const visibilitySlice = createSlice({
   reducers: {
     setAbout: (state, action) => {
       state.aboutVisible = action.payload;
+    },
+    setProjects: (state, action) => {
+      state.projectsVisible = action.payload;
     },
     setProject1: (state, action) => {
       state.project1Visible = action.payload;
@@ -30,6 +34,6 @@ export const visibilitySlice = createSlice({
   },
 });
 
-export const { setAbout, setProject1, setProject2, setProject3, setContact } =
+export const { setAbout, setProjects, setProject1, setProject2, setProject3, setContact } =
   visibilitySlice.actions;
 export default visibilitySlice.reducer;

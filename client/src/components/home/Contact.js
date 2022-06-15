@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useSelector } from 'react-redux';
+import { setContact } from '../../redux/visibility';
+import useObserver from '../../hooks/useObserver';
 import Header from './Header';
 import './Contact.css';
 
 const Contact = () => {
+  // * redux & ref
+  const { contactVisible } = useSelector((state) => state.visibility);
+  const contactRef = useRef();
+
+  // * custom hook
+  useObserver(contactRef, setContact);
+
   return (
-    <div className='contact'>
+    <div ref={contactRef} className={contactVisible ? 'contact' : 'contact contact--hidden'}>
       <Header id='contact' heading='contact' />
       <div className='contact-content'>
         <div className='contact-left'>

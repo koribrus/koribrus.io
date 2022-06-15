@@ -2,6 +2,12 @@
   margin-right: 15rem;
   margin-bottom: 15rem;
   padding: 0 7.5rem;
+  transition: transform 1s, opacity 1s;
+}
+
+.contact--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .contact-content {
