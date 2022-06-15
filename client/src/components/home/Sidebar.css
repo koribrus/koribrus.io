@@ -45,3 +45,31 @@
   height: 50px;
   margin-bottom: 2rem;
 }
+
+/* animation */
+.animate-sidebar {
+  opacity: 0;
+}
+
+.animate-sidebar-1 {
+  animation: sidebar-top 0.25s forwards linear;
+  animation-delay: 2.4s;
+}
+
+.animate-sidebar-2 {
+  transform: translateY(100%);
+  animation: sidebar-btm 0.25s forwards linear;
+  animation-delay: 2.4s;
+}
+
+@keyframes sidebar-top {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes sidebar-btm {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

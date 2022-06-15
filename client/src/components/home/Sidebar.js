@@ -10,8 +10,14 @@ import logo4 from '../../img/logos/kb-logo-v3.png';
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <img src={logo3} alt='KB logo' width='150' height='150' />
-      <div className='nav-links'>
+      <img
+        src={logo3}
+        alt='KB logo'
+        width='150'
+        height='150'
+        className='animate-sidebar animate-sidebar-1'
+      />
+      <div className='nav-links animate-sidebar animate-sidebar-2'>
         <div className='line-vertical top'></div>
         <div className='icons'>
           <a href='https://github.com/koribrus' rel='noreferrer' target='_blank'>

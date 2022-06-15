@@ -27,3 +27,33 @@
 .intro-content {
   width: 42rem;
 }
+
+/* animation */
+.animate-intro {
+  transform: translateY(50%);
+  opacity: 0;
+  animation: introduction 0.2s forwards linear;
+}
+
+.animate-intro-1 {
+  animation-delay: 1.1s;
+}
+.animate-intro-2 {
+  animation-delay: 1.3s;
+}
+.animate-intro-3 {
+  animation-delay: 1.5s;
+}
+.animate-intro-4 {
+  animation-delay: 1.7s;
+}
+.animate-intro-5 {
+  animation-delay: 1.9s;
+}
+
+@keyframes introduction {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

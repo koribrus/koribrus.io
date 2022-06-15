@@ -12,7 +12,10 @@ const NavigationBar = () => {
     <div className='navbar'>
       <div></div>
       <ul className='nav-menu'>
-        <li className='nav-item' onClick={(e) => smoothScroll(e, 'about')}>
+        <li
+          className='nav-item animate-nav animate-nav-1'
+          onClick={(e) => smoothScroll(e, 'about')}
+        >
           <a className='nav-link' href='/'>
             <span className='nav-bullet'>{'>>'}</span>
             <span className='paranthesis'>(</span>
@@ -20,7 +23,10 @@ const NavigationBar = () => {
             <span className='paranthesis paranthesis-r'>)</span>
           </a>
         </li>
-        <li className='nav-item' onClick={(e) => smoothScroll(e, 'projects')}>
+        <li
+          className='nav-item animate-nav animate-nav-2'
+          onClick={(e) => smoothScroll(e, 'projects')}
+        >
           <a className='nav-link' href='/'>
             <span className='nav-bullet'>{'>>'}</span>
             <span className='paranthesis'>(</span>
@@ -28,7 +34,10 @@ const NavigationBar = () => {
             <span className='paranthesis paranthesis-r'>)</span>
           </a>
         </li>
-        <li className='nav-item' onClick={(e) => smoothScroll(e, 'contact')}>
+        <li
+          className='nav-item animate-nav animate-nav-3'
+          onClick={(e) => smoothScroll(e, 'contact')}
+        >
           <a className='nav-link' href='/'>
             <span className='nav-bullet'>{'>>'}</span>
             <span className='paranthesis'>(</span>
@@ -36,7 +45,7 @@ const NavigationBar = () => {
             <span className='paranthesis paranthesis-r'>)</span>
           </a>
         </li>
-        <li className='nav-item btn'>
+        <li className='nav-item animate-nav animate-nav-4 btn'>
           <a className='nav-btn' href='/'>
             Resume
           </a>
