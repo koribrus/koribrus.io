@@ -63,6 +63,8 @@
   --primary-text-lib: #343d42;
   --secondary-text-lib: #a48666;
   --tertiary-text-lib: #ffffff;
+  /* Times */
+  --reveal-delay: 2s;
 }
 
 * {

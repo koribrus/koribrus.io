@@ -1,8 +1,9 @@
 import React from 'react';
-import NavigationBar from './NavigationBar';
 import Sidebar from './Sidebar';
+import NavigationBar from './NavigationBar';
 import Introduction from './Introduction';
 import About from './About';
+import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
 import './Home.css';
@@ -27,6 +28,7 @@ class Home extends React.Component {
         <div className='main-content'>
           <Introduction />
           <About />
+          <Skills />
           <Projects />
           <Contact />
         </div>

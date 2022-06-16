@@ -87,8 +87,7 @@
   position: absolute;
   height: 0px;
   overflow: hidden;
-  transition: height ease 1s;
-  box-shadow: 1px 1px 5px 0.5px #3d3d3dff;
+  transition: height ease 1s, box-shadow ease 1s;
 }
 
 .apps-dropdown {
@@ -96,10 +95,8 @@
   color: #4c4c4c;
   width: 272px;
   font-family: proxima-nova, sans-serif;
-  /* list-style-position: inside; */
   list-style: none;
   padding-top: 1rem;
-  box-shadow: 10px 1px 5px 5px #141414ff;
 }
 
 .apps-dropdown a {
@@ -116,7 +113,7 @@
 }
 
 .apps-dropdown-item:hover {
-  background-color: #b7afac80;
+  background-color: #b3aba8e6;
 }
 
 .apps-dropdown-item:hover .dropdown-count {

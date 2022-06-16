@@ -5,6 +5,7 @@ import booksReducer from './books';
 import shelfReducer from './shelves';
 import slidesReducer from './slides';
 import visibilityReducer from './visibility';
+import dropdownReducer from './dropdown';
 
 export default configureStore({
   reducer: {
@@ -14,5 +15,6 @@ export default configureStore({
     shelves: shelfReducer,
     slides: slidesReducer,
     visibility: visibilityReducer,
+    dropdown: dropdownReducer,
   },
 });

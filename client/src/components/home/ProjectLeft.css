@@ -3,12 +3,12 @@
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 15rem;
   margin-right: 200px;
-  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity var(--reveal-delay);
 }
 
 .project--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  /* transform: translateY(8rem); */
 }
 
 .project h4 {

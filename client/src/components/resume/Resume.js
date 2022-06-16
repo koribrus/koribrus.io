@@ -24,12 +24,9 @@ const Resume = () => {
   useEffect(() => {
     const fetchResumes = async () => {
       const response = await resumeAxios.get('resume');
-
       const data = response.data.data;
 
-      // console.log(data.resume);
       setResume(data.resume);
-      // console.log(data.resume);
     };
 
     fetchResumes();
@@ -99,7 +96,7 @@ const Resume = () => {
                   <div className='project-name'>
                     <div className='project-left'>
                       <h5>koribrus.io</h5>
-                      <a>
+                      <a href='/' className='project-icon'>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
                     </div>
@@ -115,7 +112,7 @@ const Resume = () => {
                   <div className='project-name'>
                     <div className='project-left'>
                       <h5>my library</h5>
-                      <a>
+                      <a href='/' className='project-icon'>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
                     </div>
@@ -130,7 +127,7 @@ const Resume = () => {
                   <div className='project-name'>
                     <div className='project-left'>
                       <h5>koribrus.photography</h5>
-                      <a>
+                      <a href='/' className='project-icon'>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
                     </div>

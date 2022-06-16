@@ -97,12 +97,10 @@ const Projects = () => {
   };
 
   return (
-    <React.Fragment>
-      <div ref={projectsRef} className={projectsVisible ? 'projects' : 'projects projects--hidden'}>
-        <Header heading='projects' />
-      </div>
+    <div ref={projectsRef} className={projectsVisible ? 'projects' : 'projects projects--hidden'}>
+      <Header id='projects' heading='projects' />
       {renderProjects(projects)}
-    </React.Fragment>
+    </div>
   );
 };
 

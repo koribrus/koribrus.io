@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 import { setAbout } from '../../redux/visibility';
 import useObserver from '../../hooks/useObserver';
 import Header from './Header';
-import Skills from './Skills';
 import './About.css';
 import profileImg from './../../img/kori-brus-profile.jpg';
 
@@ -17,7 +16,6 @@ const About = () => {
 
   return (
     <div ref={aboutRef} className={aboutVisible ? 'about' : 'about about--hidden'}>
-      {/* <div ref={aboutRef} className='about about--hidden'> */}
       <Header id='about' heading='about' />
       <div className='about-content'>
         <div className='profile-text'>
@@ -40,7 +38,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Skills />
     </div>
   );
 };

@@ -1,6 +1,15 @@
 .skills {
   font-family: 'Segoe UI Variable semi-bold', sans-serif;
-  padding-left: 7.5rem;
+  padding-left: 15rem;
+  padding-right: 7.5rem;
+  margin-right: 15rem;
+  margin-bottom: 20rem;
+  transition: transform 1s, opacity var(--reveal-delay);
+}
+
+.skills--hidden {
+  opacity: 0;
+  /* transform: translateY(8rem); */
 }
 
 .skills-header {

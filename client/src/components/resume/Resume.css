@@ -59,12 +59,12 @@ section {
 
 .resume-left {
   position: sticky !important;
-  top: 0 !important;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh !important;
+  height: 100vh;
   padding: 2rem 0 0 2rem;
 }
 
@@ -124,7 +124,7 @@ section {
 .resume-header {
   padding: 2rem;
   background: linear-gradient(to top right, #0000, var(--gradient-1));
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   margin-bottom: 2rem;
 }
 
@@ -183,4 +183,63 @@ section {
 .course p {
   margin: 0;
   padding-left: 1rem;
+}
+
+/* media rules */
+@media print {
+  @page {
+    size: 210mm 297mm;
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .resume {
+    grid-template-columns: 1fr 4fr;
+    padding: 0;
+  }
+
+  .resume-left {
+    padding-left: 0;
+  }
+
+  .resume-right {
+    padding: 3rem 0;
+    padding-right: 0.5rem;
+  }
+
+  .resume-header {
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+
+  .web-project p {
+    font-size: 0.8rem;
+  }
+
+  .project-icon {
+    display: none !important;
+  }
+
+  .resume h2 {
+    font-size: 30px;
+  }
+
+  .resume h4 {
+    font-size: 1.25rem;
+  }
+
+  .resume h5 {
+    font-size: 0.9rem;
+  }
+
+  .objective {
+    font-size: 13px;
+  }
+
+  /* Course.js */
+  .course p {
+    font-size: 0.8rem;
+  }
 }

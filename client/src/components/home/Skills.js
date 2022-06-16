@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useSelector } from 'react-redux';
+import { setSkills } from '../../redux/visibility';
+import useObserver from '../../hooks/useObserver';
 import './Skills.css';
 
 const Skills = () => {
+  // * redux & ref
+  const { skillsVisible } = useSelector((state) => state.visibility);
+  const skillsRef = useRef();
+
+  // * custom hook
+  useObserver(skillsRef, setSkills);
+
   return (
-    <div className='skills'>
+    <div ref={skillsRef} className={skillsVisible ? 'skills' : 'skills skills--hidden'}>
       <div className='skills-header'>
         <h5>skills</h5>
         <div className='skills-line'></div>

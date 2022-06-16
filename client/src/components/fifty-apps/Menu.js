@@ -1,25 +1,34 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { IoMdArrowDropdown } from 'react-icons/io';
+import { open, close } from '../../redux/dropdown';
 
 const Menu = (props) => {
-  // ! move open/close dropdown state from Menu to redux. Once there, set conditional box shadow on .apps-dropdown to ensure shadow isn't visible on 'close' state.
-  // * state controls open/close of dropdown
-  const [open, setOpen] = useState(false);
+  // * state controls open of dropdown
+  const { menuOpen } = useSelector((state) => state.dropdown);
+  const dispatch = useDispatch();
 
-  // * useRef to manually set div height for css transition
+  // * useRef to manually set div height & box shadow for css transition
   const dropdownRef = useRef();
 
   return (
-    <div className='apps-menu'>
+    <div className='apps-menu' onMouseLeave={() => dispatch(close())}>
       <div className='apps-menu-cntrl'>
         <div className='apps-menu-line'></div>
         <h4>select app</h4>
-        <IoMdArrowDropdown onClick={() => setOpen(!open)} />
+        <IoMdArrowDropdown onMouseOver={() => dispatch(open())} />
       </div>
       <div
         className='dropdown-container'
         ref={dropdownRef}
-        style={open ? { height: dropdownRef.current.scrollHeight + 'px' } : { height: '0px' }}
+        style={
+          menuOpen
+            ? {
+                height: dropdownRef.current.scrollHeight + 'px',
+                boxShadow: '1px 1px 5px 0.5px #3d3d3dff',
+              }
+            : { height: '0px' }
+        }
       >
         {props.children}
       </div>
