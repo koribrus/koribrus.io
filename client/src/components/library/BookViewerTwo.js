@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const BookViewer = ({ width, height }) => {
+const BookViewerTwo = ({ width, height }) => {
   const { selectedBook } = useSelector((state) => state.books);
 
   const renderViewer = () => {
@@ -15,8 +15,8 @@ const BookViewer = ({ width, height }) => {
           border: '0px',
         }}
         src={`https://books.google.ca/books?id=${selectedBook.id}&newbks=0&pg=PP1&output=embed`}
-        width='384'
-        height='575'
+        width='533'
+        height='800'
         frameBorder='0'
         scrolling='no'
       ></iframe>
@@ -26,4 +26,4 @@ const BookViewer = ({ width, height }) => {
   return <div className='book-viewer'>{renderViewer()}</div>;
 };
 
-export default BookViewer;
+export default BookViewerTwo;

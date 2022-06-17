@@ -6,6 +6,7 @@ import shelfReducer from './shelves';
 import slidesReducer from './slides';
 import visibilityReducer from './visibility';
 import dropdownReducer from './dropdown';
+import modalReducer from './modals';
 
 export default configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export default configureStore({
     slides: slidesReducer,
     visibility: visibilityReducer,
     dropdown: dropdownReducer,
+    modal: modalReducer,
   },
 });

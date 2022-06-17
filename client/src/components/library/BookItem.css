@@ -15,6 +15,7 @@
 .image-lib {
   height: 196px;
   overflow: hidden !important;
+  cursor: pointer;
 }
 .content-lib {
   display: flex;

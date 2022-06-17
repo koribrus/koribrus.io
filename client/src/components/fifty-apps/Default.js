@@ -1,7 +1,7 @@
 import React from 'react';
 import './Default.css';
-import reactLogo from '../../img/react.jpg';
-import trioLogo from '../../img/trio.jpg';
+// import reactLogo from '../../img/react.jpg';
+// import trioLogo from '../../img/trio.jpg';
 
 const Default = () => {
   return (
@@ -10,8 +10,11 @@ const Default = () => {
         <div className='content-border'>
           <div className='default-content'>
             <div className='default-column-left'>
-              <img src={reactLogo} alt='React logo' />
-              <img src={trioLogo} alt='html css js logos' />
+              <img src='img/react-logo.png' alt='React logo' />
+              <img src='img/trio-logo.png' alt='HTML/CSS/JS logo' />
+              {/* <img src={trioLogo} alt='html css js logos' /> */}
+              {/* <img src={reactLogo} alt='React logo' />
+              <img src={trioLogo} alt='html css js logos' /> */}
             </div>
             <div className='default-column-right'>
               <div className='default-col-r-content'>
@@ -19,11 +22,22 @@ const Default = () => {
                 <p>
                   This is a self directed tutorial project that recreates each project from the
                   Udemy Course{' '}
-                  <span style={{ fontStyle: 'italic' }}>
-                    50 Projects in 50 Days (HTML, CSS & JavaScript) in React{' '}
-                  </span>{' '}
+                  <a
+                    href='https://www.udemy.com/course/50-projects-50-days/'
+                    rel='noreferrer'
+                    target='_blank'
+                  >
+                    <span
+                    // style={{ fontStyle: 'italic' }}
+                    >
+                      50 Projects in 50 Days (HTML, CSS & JavaScript) in React{' '}
+                    </span>{' '}
+                  </a>
                   by Brad Traversy and Florin Pop. All project concepts are taken from the course
                   authors. All React coding is my own.
+                </p>
+                <p>
+                  Project concepts are taken from the course authors. All React coding is my own.
                 </p>
               </div>
             </div>

@@ -50,7 +50,12 @@
   max-height: 100%;
   flex-shrink: 1;
   padding: 0.5rem;
-  background-color: #7a7a7a;
+  /* background-color: #7a7a7a; */
+  /* background-color: #f7f5f6; */
+  background-color: #d0cac8;
+  background-color: #e3dfde;
+  background-color: #eceae9;
+  background-color: #ffffff;
 }
 
 .default-column-left img {
@@ -68,4 +73,13 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.default-col-r-content a {
+  /* color: #6b5656; */
+  /* color: #5e0202; */
+  /* color: #73391e; */
+  color: #c25344;
+  /* font-family: 'Segoe UI Variable'; */
+  text-decoration: none;
 }

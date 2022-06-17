@@ -27,11 +27,6 @@
 }
 
 /* ----- navbar logo ----- */
-/* .navbar-logo {
-  text-decoration: none;
-  transition: 0.25s ease all;
-} */
-
 .navbar-logo-p p {
   color: #141414;
   margin: 0;
@@ -67,8 +62,8 @@
 }
 
 .apps-menu-cntrl h4 {
-  color: #141414;
-  font-family: proxima-nova, sans-serif;
+  color: #333333;
+  font-family: 'Segoe UI Variable semi-light', sans-serif;
   font-size: 1rem;
   font-weight: 100;
   font-style: normal;
@@ -94,14 +89,14 @@
   background: linear-gradient(to bottom, #f7f5f666, #b7afac);
   color: #4c4c4c;
   width: 272px;
-  font-family: proxima-nova, sans-serif;
+
+  font-family: 'Segoe UI Variable semi-light', sans-serif;
   list-style: none;
   padding-top: 1rem;
 }
 
 .apps-dropdown a {
-  font-family: proxima-nova, sans-serif;
-  color: #4c4c4c;
+  color: #333333;
   cursor: pointer;
 }
 
@@ -165,12 +160,12 @@
   top: 0;
   left: 0;
   padding: 2rem;
-  background: rgba(76, 76, 76, 0.6);
+  background: #4c4c4c99;
 }
 
 .banner-p h1 {
   color: var(--tertiary-text-lib);
-  font-family: freight-text-pro, serif;
+  font-family: 'Segoe UI Variable light', serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;

@@ -4,7 +4,6 @@ import Menu from './Menu';
 import './HeaderSlim.css';
 
 const HeaderSlim = () => {
-  // ! move open/close dropdown state from Menu to redux. Once there, set conditional box shadow on .apps-dropdown to ensure shadow isn't visible on 'close' state.
   return (
     <div className='header-p'>
       <div className='navbar-lib'>
@@ -55,7 +54,9 @@ const HeaderSlim = () => {
       <div className='banner-p'>
         <div className='overlay-p'>
           <div className='banner-content'>
-            <h1 className='banner-title'>50 react apps</h1>
+            <Link to='/fifty-apps/'>
+              <h1 className='banner-title'>50 react apps</h1>
+            </Link>
             <p className='banner-text'></p>
           </div>
         </div>
