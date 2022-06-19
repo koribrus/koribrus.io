@@ -12,9 +12,6 @@ const LibraryModal = ({ visible }) => {
     <div className='modal' onClick={() => dispatch(closeModal())}>
       <div className='modal-container'>
         <BookViewerTwo />
-        {/* <div className='modal-box'>
-          <h1 className='modal-title'>Library Modal</h1>
-        </div> */}
       </div>
     </div>,
     document.getElementById('modal')

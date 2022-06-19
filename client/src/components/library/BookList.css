@@ -3,12 +3,14 @@
   padding: 10px;
   text-align: center;
   transition: 0.5s ease;
+  overflow: hidden;
 }
 
 .carousel {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
+  /* max-width: 900px; */
 }
 
 .carousel > * {

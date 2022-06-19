@@ -26,7 +26,8 @@ const ProjectRight = ({ project, link, tags, index, action }) => {
             {/* <img src={`img/${project.img}`} alt={project.alt} /> */}
             <video
               onMouseEnter={(e) => e.currentTarget.play()}
-              src='vids/video-test.mp4'
+              onMouseLeave={(e) => e.currentTarget.pause()}
+              src='vids/koribrus-photo-vid.mp4'
               type='video/mp4'
               muted
               class='vid'
