@@ -27,11 +27,10 @@ const ProjectRight = ({ project, link, tags, index, action }) => {
             <video
               onMouseEnter={(e) => e.currentTarget.play()}
               onMouseLeave={(e) => e.currentTarget.pause()}
-              src='vids/koribrus-photo-vid.mp4'
+              src={`vids/${project.vid}`}
               type='video/mp4'
               muted
-              class='vid'
-              // style='border: solid; width: 800px;'
+              className='vid'
             ></video>
           </a>
         </div>

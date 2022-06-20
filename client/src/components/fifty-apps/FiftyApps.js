@@ -10,7 +10,7 @@ const FiftyApps = () => {
   return (
     <div>
       <HeaderSlim />
-      <Route path='/fifty-apps/' exact component={Default} />
+      <Route path='/fifty-apps' exact component={Default} />
       <Route path='/fifty-apps/1' component={ExpandingCards} />
       <Route path='/fifty-apps/2' component={ProgressSteps} />
     </div>

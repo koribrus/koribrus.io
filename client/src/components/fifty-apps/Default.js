@@ -12,9 +12,6 @@ const Default = () => {
             <div className='default-column-left'>
               <img src='img/react-logo.png' alt='React logo' />
               <img src='img/trio-logo.png' alt='HTML/CSS/JS logo' />
-              {/* <img src={trioLogo} alt='html css js logos' /> */}
-              {/* <img src={reactLogo} alt='React logo' />
-              <img src={trioLogo} alt='html css js logos' /> */}
             </div>
             <div className='default-column-right'>
               <div className='default-col-r-content'>
@@ -27,11 +24,7 @@ const Default = () => {
                     rel='noreferrer'
                     target='_blank'
                   >
-                    <span
-                    // style={{ fontStyle: 'italic' }}
-                    >
-                      50 Projects in 50 Days (HTML, CSS & JavaScript) in React{' '}
-                    </span>{' '}
+                    <span>50 Projects in 50 Days (HTML, CSS & JavaScript) in React </span>{' '}
                   </a>
                   by Brad Traversy and Florin Pop. All project concepts are taken from the course
                   authors. All React coding is my own.

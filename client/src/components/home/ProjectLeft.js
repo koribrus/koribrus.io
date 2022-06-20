@@ -38,7 +38,15 @@ const ProjectLeft = ({ project, link, tags, index, action }) => {
       <div className='column-right'>
         <div className='project-img'>
           <a href='https://koribrus.photography/' rel='noreferrer' target='_blank'>
-            <img src={`img/${project.img}`} alt={project.alt} />
+            {/* <img src={`img/${project.img}`} alt={project.alt} /> */}
+            <video
+              onMouseEnter={(e) => e.currentTarget.play()}
+              onMouseLeave={(e) => e.currentTarget.pause()}
+              src={`vids/${project.vid}`}
+              type='video/mp4'
+              muted
+              className='vid'
+            ></video>
           </a>
         </div>
         <div className='project-tags'>

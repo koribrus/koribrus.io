@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import * as ReactDOMClient from 'react-dom/client';
 import { Provider } from 'react-redux';
 
@@ -11,6 +12,8 @@ const root = ReactDOMClient.createRoot(container);
 
 root.render(
   <Provider store={store}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>
 );

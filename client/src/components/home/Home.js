@@ -6,6 +6,7 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import Contact from './Contact';
+import ScrollToTop from './ScrollToTop';
 import './Home.css';
 
 class Home extends React.Component {
@@ -31,6 +32,7 @@ class Home extends React.Component {
           <Skills />
           <Projects />
           <Contact />
+          <ScrollToTop />
         </div>
       </div>
     );

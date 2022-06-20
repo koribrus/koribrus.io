@@ -41,9 +41,12 @@
   z-index: 1;
 }
 
+.project-l .column-right:hover {
+  z-index: 10;
+}
+
 .project-l .project-img {
   min-width: 750px;
-  /* max-height: 421.875px; */
   border-radius: 5px;
   background-color: var(--highlight);
 }
@@ -57,6 +60,18 @@
 }
 
 .project-l .project-img img:hover {
+  opacity: 1;
+}
+
+.project-l .project-img video {
+  display: block;
+  max-width: 750px;
+  opacity: 0.4;
+  transition: 0.5s ease opacity;
+  border-radius: 5px;
+}
+
+.project-l .project-img video:hover {
   opacity: 1;
 }
 

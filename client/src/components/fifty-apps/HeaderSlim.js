@@ -9,7 +9,7 @@ const HeaderSlim = () => {
       <div className='navbar-lib'>
         <div className='navbar-top-p'></div>
         <div className='navbar-content-p'>
-          <Link className='navbar-logo-p' to='/'>
+          <Link className='navbar-logo-p' to='/fifty-apps'>
             <p>koribrus.io</p>
           </Link>
           <Menu>
