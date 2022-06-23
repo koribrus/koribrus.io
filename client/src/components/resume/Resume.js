@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { fetchResume } from '../../redux/resume';
@@ -31,9 +32,6 @@ const Resume = () => {
 
     fetchResumes();
   }, []);
-
-  console.log(resume);
-  console.log(resume ? 'resume' : 'no resume');
 
   const renderSchools = (schools) => {
     const renderedSchools = schools.map((school, index) => {
@@ -70,9 +68,14 @@ const Resume = () => {
                   <li>{basics.email}</li>
                   <li>{basics.phone}</li>
                   <li>{basics.location.address}</li>
-                  <li>{basics.website}</li>
+                  <li>
+                    <Link to='/'>{basics.website}</Link>
+                  </li>
                 </ul>
               </div>
+              <a href={'/files/koribrus-resume.pdf'} className='resume-btn'>
+                Download PDF
+              </a>
               <ResumeSidebar />
             </div>
           </div>
@@ -80,10 +83,10 @@ const Resume = () => {
             <div className='resume-header'>
               <h2>{basics.name}</h2>
               <div className='objective'>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                A communications professional launching a career in full stack web development.
+                Proficiency in JavaScript, CSS/HTML and specializing in the React/Redux environment.
+                A natural problem solver and committed learner, I am excited to expand my experience
+                into new applications and challenges.
               </div>
             </div>
             <div className='resume-content'>
@@ -94,40 +97,49 @@ const Resume = () => {
                 </div>
                 <div className='web-project'>
                   <div className='project-name'>
-                    <div className='project-left'>
+                    <div className='project-title'>
                       <h5>koribrus.io</h5>
-                      <a href='/' className='project-icon'>
+                      <Link to='/' className='project-icon'>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                      </a>
+                      </Link>
                     </div>
                     <h6>2022</h6>
                   </div>
                   <p>
-                    Portfolio site coded from scratch featuring a node.js backend and express.js
-                    server, React framework, Redux Toolkit state, React Router, and data fetch from
-                    multiple APIs (Google and Github). Design inspiration from Brittnay Chiang.
+                    Portfolio site coded from scratch with a node.js/express.js backend, React
+                    frontend, Redux Toolkit state, React Router and API calls to server.
                   </p>
+                  <ul className='project-list'>
+                    <li>Intersection Observer for scroll reveal (no libraries)</li>
+                    <li>Smooth scrolling with custom hooks and CSS keyframes (no libraries)</li>
+                    <li>Static assets from node.js server</li>
+                  </ul>
                 </div>
                 <div className='web-project'>
                   <div className='project-name'>
-                    <div className='project-left'>
-                      <h5>my library</h5>
-                      <a href='/' className='project-icon'>
+                    <div className='project-title'>
+                      <h5>the library</h5>
+                      <Link to='/library' className='project-icon'>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                      </a>
+                      </Link>
                     </div>
                     <h6>2022</h6>
                   </div>
                   <p>
-                    Online library and reader featuring my personal reading recommendations. Google
-                    Books API with Axios, Redux Toolkit state management, and a React Framework.
+                    Online library and reader showcasing my personal reading lists. Google Books API
+                    with Axios API calls, Redux Toolkit state management and React Framework.
                   </p>
+                  <ul className='project-list'>
+                    <li>React image carousel image slider (no libraries)</li>
+                    <li>Async data calls with Redux Toolkit</li>
+                    <li>Integrated book reader & modal window with React Portals</li>
+                  </ul>
                 </div>
                 <div className='web-project'>
                   <div className='project-name'>
-                    <div className='project-left'>
+                    <div className='project-title'>
                       <h5>koribrus.photography</h5>
-                      <a href='/' className='project-icon'>
+                      <a href='https://koribrus.photography/' className='project-icon'>
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                       </a>
                     </div>
@@ -135,9 +147,14 @@ const Resume = () => {
                   </div>
                   <p>
                     Personal photography site featuring parallax scrolling, lightbox image showcase,
-                    page animations, and responsive design with layouts for PC, tablets and mobile
-                    devices. Written exclusively in HTML/CSS/JavaScript.
+                    page animations, and responsive layout. Written exclusively in
+                    HTML/CSS/JavaScript.
                   </p>
+                  <ul className='project-list'>
+                    <li>Parallax scrolling with responsive background image</li>
+                    <li>Custom layouts for mobile, landscape and web</li>
+                    <li>PHP contact form</li>
+                  </ul>
                 </div>
               </section>
 

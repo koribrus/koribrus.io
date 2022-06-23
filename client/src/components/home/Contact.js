@@ -20,10 +20,18 @@ const Contact = () => {
         <div className='contact-left'>
           <div className='contact-text'>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Erat nam at lectus urna duis convallis.
-              Ultrices in iaculis nunc sed augue lacus viverra vitae congue. Enim neque volutpat ac
-              tincidunt vitae semper quis lectus nulla. Feugiat sed lectus vestibulum mattis.
+              My inbox is open to new inquiries and opportunities. Contact me by email below or find
+              me on
+              <a
+                href='https://www.linkedin.com/in/koribrus'
+                rel='noreferrer'
+                target='_blank'
+                className='body-link'
+              >
+                {' '}
+                LinkedIn
+              </a>
+              .
             </p>
           </div>
           <div className='contact-btn-container btn'>

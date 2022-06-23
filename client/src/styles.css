@@ -120,3 +120,8 @@ p {
 a {
   text-decoration: none;
 }
+
+.body-link {
+  color: var(--highlight);
+  font-weight: bold;
+}

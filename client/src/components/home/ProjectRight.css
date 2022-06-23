@@ -93,7 +93,7 @@
 
 .project-r .project-content {
   position: absolute;
-  bottom: 0;
+  bottom: 20%;
   right: 0;
   background-color: var(--background-secondary);
   padding: 1.5rem;

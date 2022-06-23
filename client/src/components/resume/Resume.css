@@ -92,6 +92,10 @@ section {
   padding: 0.25rem 0;
 }
 
+.contact-info ul li a {
+  text-decoration: none;
+}
+
 .resume-img-container {
   padding: 1rem;
 }
@@ -114,6 +118,24 @@ section {
 
 .profile-summary {
   height: 70vh;
+}
+
+.resume-btn {
+  font-family: 'Consolas', 'Roboto Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 200 !important;
+  color: var(--highlight);
+  background-color: var(--background-primary);
+  opacity: 1;
+  margin: 2rem 0;
+  padding: 0.5rem 2rem;
+  border-radius: 3px;
+  transition: 0.25s ease all;
+}
+
+.resume-btn:hover {
+  color: var(--resume-text-3);
+  background-color: var(--highlight);
 }
 
 /* -----  RIGHT COLUMN  ----- */
@@ -152,7 +174,8 @@ section {
   margin: 1rem 0;
 }
 
-.web-project .project-left {
+/* project title */
+.web-project .project-title {
   color: var(--resume-text-1);
   font-size: 0.8rem;
   display: flex;
@@ -161,7 +184,7 @@ section {
   text-align: center;
 }
 
-.web-project .project-left a {
+.web-project .project-title a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,6 +196,33 @@ section {
   margin-right: 4rem;
 }
 
+/* project bullet list */
+.web-project .project-list {
+  list-style: none;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.web-project .project-list li::before {
+  content: '\2022';
+  color: var(--highlight);
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+}
+
+/* project link icon */
+.project-icon {
+  color: var(--resume-text-3);
+  transition: color 0.25s ease;
+}
+
+.project-icon:hover {
+  color: var(--highlight);
+}
+
+/* courses */
 .course,
 .project-name,
 .role {

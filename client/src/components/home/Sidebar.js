@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       <img
-        src={logo3}
+        src={logo1}
         alt='KB logo'
         width='150'
         height='150'

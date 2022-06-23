@@ -4,15 +4,27 @@ import './Introduction.css';
 const Introduction = () => {
   return (
     <div className='introduction'>
-      <h4 className='animate-intro animate-intro-1'>Welcome! I'm...</h4>
+      <h4 className='animate-intro animate-intro-1'>Hello, I'm...</h4>
       <h1 className='animate-intro animate-intro-2'>kori brus</h1>
       <h2 className='animate-intro animate-intro-3'>Web Development | Communications</h2>
       <div className='intro-content'>
         <p className='animate-intro animate-intro-4'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Erat nam at lectus urna duis convallis. Ultrices in
-          iaculis nunc sed augue lacus viverra vitae congue. Enim neque volutpat ac tincidunt vitae
-          semper quis lectus nulla. Feugiat sed lectus vestibulum mattis.
+          Welcome to my portfolio! This site is a React application with a backend Express server in
+          Node.js. Check out the code on my{' '}
+          <a
+            href='https://github.com/koribrus'
+            rel='noreferrer'
+            target='_blank'
+            className='body-link'
+          >
+            GitHub
+          </a>{' '}
+          page.
+        </p>
+        <p className='animate-intro animate-intro-4'>
+          I've quickly come to love the challenges and opportunities of web programming. I'm excited
+          to continue exploring JavaScript at greater depth and expand my understanding into new
+          languages. My focus has been on...
         </p>
         <div className='bullet-columns animate-intro animate-intro-5'>
           <ul>
