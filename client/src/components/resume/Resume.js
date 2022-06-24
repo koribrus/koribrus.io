@@ -69,7 +69,9 @@ const Resume = () => {
                   <li>{basics.phone}</li>
                   <li>{basics.location.address}</li>
                   <li>
-                    <Link to='/'>{basics.website}</Link>
+                    <Link to='/' className='contact-link'>
+                      {basics.website}
+                    </Link>
                   </li>
                 </ul>
               </div>

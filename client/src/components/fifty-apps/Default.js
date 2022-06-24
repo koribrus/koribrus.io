@@ -26,8 +26,7 @@ const Default = () => {
                   >
                     <span>50 Projects in 50 Days (HTML, CSS & JavaScript) in React </span>{' '}
                   </a>
-                  by Brad Traversy and Florin Pop. All project concepts are taken from the course
-                  authors. All React coding is my own.
+                  by Brad Traversy and Florin Pop.
                 </p>
                 <p>
                   Project concepts are taken from the course authors. All React coding is my own.

@@ -34,6 +34,13 @@
   transform: translateY(-5%);
 }
 
+.icon-react {
+  color: var(--background-primary);
+  background-color: var(--primary-text);
+  font-size: 1.5rem;
+  border: none;
+}
+
 .line-vertical {
   background-color: var(--primary-text);
   width: 2px;

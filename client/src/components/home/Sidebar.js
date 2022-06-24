@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFan } from '@fortawesome/free-solid-svg-icons';
+import { SiCodewars } from 'react-icons/si';
 import './Sidebar.css';
 import logo1 from '../../img/logos/kb-logo-v1.png';
 import logo2 from '../../img/logos/kb-logo-v1-b.png';
@@ -25,6 +27,9 @@ const Sidebar = () => {
           </a>
           <a href='https://www.instagram.com/koribrus' rel='noreferrer' target='_blank'>
             <FontAwesomeIcon icon={faInstagram} className='icon' />
+          </a>
+          <a href='https://www.codewars.com/users/bruzky' rel='noreferrer' target='_blank'>
+            <FontAwesomeIcon icon={faFan} className='icon' />
           </a>
           <a href='https://www.linkedin.com/in/koribrus' rel='noreferrer' target='_blank'>
             <FontAwesomeIcon icon={faLinkedin} className='icon' />
