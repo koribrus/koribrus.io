@@ -42,20 +42,32 @@
 }
 
 :root {
+  /* fonts */
+  --primary-font: 'Segoe UI Variable semi-light', sans-serif;
+  --primary-font-bold: 'Segoe UI Variable semi-bold', sans-serif;
+  --primary-font-normal: 'Segoe UI Variable', sans-serif;
+  --secondary-font: 'Consolas', 'Roboto Mono', monospace;
   /* main palette */
-  --background-primary: #191528;
-  --background-secondary: #322a50;
+  --bg-primary: #191528;
+  --bg-secondary: #322a50;
   --highlight: #ff9305;
   --darklight: #1f1b15;
   --primary-text: #a09ea9;
   --secondary-text: #cac9cf;
-  --gradient-1: rgba(25, 21, 40, 0.7);
-  --gradient-2: rgba(255, 147, 5, 0.7);
-  /* Resume colors */
+  /* resume */
+  --resume-font-main: 'Segoe UI Variable semi-light', sans-serif;
+  --resume-font-bold: 'Segoe UI Variable semi-bold', sans-serif;
+  --resume-font-secondary: 'Consolas', 'Roboto Mono', monospace;
   --resume-text-1: #484747;
   --resume-text-2: #dfdfe2;
   --resume-text-3: #191528;
-  /* Library colors */
+  --resume-bg-primary: #ffffff;
+  --resume-bg-secondary: #191528;
+  --gradient-1: rgba(25, 21, 40, 0.7);
+  --gradient-2: rgba(255, 147, 5, 0.7);
+  /* library */
+  --library-font-main: freight-text-pro, serif;
+  --library-font-secondary: proxima-nova, sans-serif;
   --primary-bg-lib: #f4f5f6;
   --secondary-bg-lib: #ecebe9;
   --tertiary-bg-lib: #343d42;
@@ -64,7 +76,21 @@
   --primary-text-lib: #343d42;
   --secondary-text-lib: #a48666;
   --tertiary-text-lib: #ffffff;
-  /* Times */
+  /* 50 apps */
+  --apps-font-primary: 'Segoe UI Variable semi-light', sans-serif;
+  --apps-font-secondary: proxima-nova, sans-serif;
+  --primary-text-apps: #7a7a7a;
+  --secondary-text-apps: #4c4c4c;
+  --tertiary-text-apps: #c25344;
+  --primary-bg-apps: #f7f5f6;
+  --secondary-bg-apps: #ffffff;
+  --border-apps: #b7afac;
+  --shadow-apps: #141414;
+  --line-border-fill: #3498db;
+  --line-border-empty: #e0e0e0;
+  /* times */
+  --scroll-time: 1s;
+  --transition-time: 0.5s;
   --reveal-delay: 1s;
 }
 
@@ -75,7 +101,7 @@
 }
 
 body {
-  background-color: var(--background-primary);
+  background-color: var(--bg-primary);
 }
 
 h1 {

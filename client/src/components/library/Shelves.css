@@ -1,5 +1,5 @@
 .shelves {
-  font-family: proxima-nova, sans-serif;
+  font-family: var(--library-font-secondary);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

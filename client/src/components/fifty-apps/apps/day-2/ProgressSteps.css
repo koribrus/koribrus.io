@@ -1,17 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-:root {
-  --line-border-fill: #3498db;
-  --line-border-empty: #e0e0e0;
-}
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} */
-
 .container-pro {
-  background-color: #f7f5f6;
+  background-color: var(--primary-bg-apps);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +49,7 @@
   align-items: center;
   text-align: center;
   font-family: 'Muli', sans-serif;
-  background-color: #fff;
+  background-color: var(--secondary-bg-apps);
   color: #999;
   width: 30px;
   height: 30px;
@@ -80,7 +70,7 @@
 .btn-pro {
   font-family: 'Muli', sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: var(--secondary-bg-apps);
   background-color: var(--line-border-fill);
   padding: 8px 30px;
   margin: 0 20px;

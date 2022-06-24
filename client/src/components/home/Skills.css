@@ -1,15 +1,14 @@
 .skills {
-  font-family: 'Segoe UI Variable semi-bold', sans-serif;
+  font-family: var(--primary-font-bold);
   padding-left: 15rem;
   padding-right: 7.5rem;
   margin-right: 15rem;
   margin-bottom: 20rem;
-  transition: transform 1s, opacity var(--reveal-delay);
+  transition: transform var(--reveal-delay), opacity var(--reveal-delay);
 }
 
 .skills--hidden {
   opacity: 0;
-  /* transform: translateY(8rem); */
 }
 
 .skills-header {
@@ -20,11 +19,11 @@
 
 .skills-line {
   display: block;
-  background-color: var(--secondary-text) !important;
+  background-color: var(--secondary-text);
   width: 250px;
   height: 0.5px;
-  transform: translateY(-8.5px);
   margin-left: 0.5rem;
+  transform: translateY(-8.5px);
 }
 
 .skills h5 {

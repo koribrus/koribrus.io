@@ -4,7 +4,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  font-family: 'Consolas', 'Roboto Mono', monospace;
+  font-family: var(--secondary-font);
   font-size: 0.75rem;
   color: var(--primary-text);
   line-height: 1.8;

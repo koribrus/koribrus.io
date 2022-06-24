@@ -40,7 +40,7 @@
 
 .navbar-content-lib p {
   color: var(--primary-text-lib);
-  font-family: proxima-nova, sans-serif;
+  font-family: var(--library-font-secondary);
   font-weight: 100;
   font-style: normal;
   font-size: 1.5rem;
@@ -50,7 +50,6 @@
 .banner-lib {
   position: relative;
   height: 28vh;
-  /* background-image: url('../../img/glasses-old-books-desk.jpg'); */
   background-image: url('../../../public/img/glasses-old-books-desk.jpg');
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -70,7 +69,7 @@
 
 .banner-lib h1 {
   color: var(--tertiary-text-lib);
-  font-family: freight-text-pro, serif;
+  font-family: var(--library-font-main);
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
@@ -79,7 +78,7 @@
 
 .banner-lib p {
   color: var(--tertiary-text-lib);
-  font-family: freight-big-pro, serif;
+  font-family: var(--library-font-main);
   font-weight: 400;
   font-style: italic;
   font-size: 1rem;

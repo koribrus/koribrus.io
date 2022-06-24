@@ -1,6 +1,5 @@
 import React from 'react';
 import Course from './Course';
-import './School.css';
 
 const School = ({ school }) => {
   const renderCourses = (courses) => {

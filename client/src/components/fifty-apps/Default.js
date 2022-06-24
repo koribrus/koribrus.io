@@ -1,7 +1,5 @@
 import React from 'react';
 import './Default.css';
-// import reactLogo from '../../img/react.jpg';
-// import trioLogo from '../../img/trio.jpg';
 
 const Default = () => {
   return (

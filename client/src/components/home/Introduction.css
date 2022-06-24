@@ -9,7 +9,7 @@
 
 .bullet-columns {
   color: var(--primary-text);
-  font-family: 'Roboto Mono', monospace;
+  font-family: var(--secondary-font);
   font-size: 14px;
   display: flex;
   justify-content: space-evenly;
@@ -21,11 +21,11 @@
 }
 .bullet-columns ul li::before {
   content: '\2022';
-  color: #ff9305;
+  color: var(--highlight);
   font-weight: bold;
   display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
 .intro-content {

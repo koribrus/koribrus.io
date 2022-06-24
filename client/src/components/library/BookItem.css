@@ -14,7 +14,7 @@
 }
 .image-lib {
   height: 196px;
-  overflow: hidden !important;
+  overflow: hidden;
   cursor: pointer;
 }
 .content-lib {
@@ -26,16 +26,16 @@
 }
 
 .book-card {
-  max-width: 125px !important;
+  max-width: 125px;
 }
 
 .book-title {
   color: var(--primary-text-lib);
-  font-family: proxima-nova, sans-serif;
+  font-family: var(--library-font-secondary);
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-  font-size: 14px !important;
+  font-size: 14px;
 }
 
 .book-year {
@@ -44,6 +44,6 @@
 
 .book-author {
   color: var(--secondary-text-lib);
-  font-family: proxima-nova, sans-serif;
-  font-size: 13px !important;
+  font-family: var(--library-font-secondary);
+  font-size: 13px;
 }

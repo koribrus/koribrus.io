@@ -2,20 +2,19 @@
   position: relative;
   padding: 10px;
   text-align: center;
-  transition: 0.5s ease;
   overflow: hidden;
+  transition: var(--transition-time) ease;
 }
 
 .carousel {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  /* max-width: 900px; */
 }
 
 .carousel > * {
-  transition: 0.5s ease;
   vertical-align: middle;
+  transition: var(--transition-time) ease;
 }
 
 .carousel-overlay {

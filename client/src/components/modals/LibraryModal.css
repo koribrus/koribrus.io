@@ -9,7 +9,7 @@
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-  transition: opacity 0.5s ease;
+  transition: opacity var(--transition-time) ease;
 }
 
 .modal--hidden {

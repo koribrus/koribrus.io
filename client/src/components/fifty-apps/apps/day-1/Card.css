@@ -15,7 +15,7 @@
 }
 
 .card-ec h3 {
-  color: #f7f5f6;
+  color: var(--primary-bg-apps);
   font-size: 1.25rem;
   position: absolute;
   left: 1.5rem;

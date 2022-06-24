@@ -57,7 +57,6 @@ const HeaderSlim = () => {
             <Link to='/fifty-apps/'>
               <h1 className='banner-title'>50 react apps</h1>
             </Link>
-            <p className='banner-text'></p>
           </div>
         </div>
       </div>

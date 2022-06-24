@@ -18,23 +18,23 @@
 
 .nav-item {
   padding: 0 1rem;
-  transition: 1s ease all;
+  transition: var(--scroll-time) ease all;
 }
 
 .nav-link {
-  font-family: 'Consolas', 'Roboto Mono', monospace;
+  font-family: var(--secondary-font);
   font-size: 0.9rem;
-  font-weight: 200 !important;
-  color: var(--primary-text) !important;
+  font-weight: 200;
+  color: var(--primary-text);
   opacity: 1;
-  transition: 0.5s ease all;
+  transition: var(--transition-time) ease all;
 }
 
 .paranthesis {
   color: var(--primary-text);
   letter-spacing: normal;
   opacity: 0;
-  transition: 0.5s ease all !important;
+  transition: var(--transition-time) ease all;
 }
 
 .paranthesis-r {
@@ -45,21 +45,21 @@
   color: var(--highlight);
   letter-spacing: -2px;
   opacity: 1;
-  transform: translateX(5px) !important;
-  transition: 0.5s ease opacity;
+  transform: translateX(5px);
+  transition: var(--transition-time) ease opacity;
 }
 
 .nav-btn {
   font-family: 'Consolas', 'Roboto Mono', monospace;
   font-size: 0.9rem;
-  font-weight: 200 !important;
-  color: var(--highlight) !important;
+  font-weight: 200;
+  color: var(--highlight);
   opacity: 1;
   margin: 0 1rem 0 0.5rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--highlight);
   border-radius: 3px;
-  transition: 0.5s ease all;
+  transition: var(--transition-time) ease all;
 }
 
 .nav-btn a {
@@ -67,7 +67,7 @@
 }
 
 .nav-link:hover {
-  color: var(--highlight) !important;
+  color: var(--highlight);
 }
 
 .nav-link:hover > .paranthesis {

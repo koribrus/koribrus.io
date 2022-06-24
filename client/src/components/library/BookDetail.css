@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--tertiary-text-lib);
   padding: 1rem;
 }
 
@@ -26,7 +26,6 @@
   color: var(--primary-bg-lib);
   background-color: var(--active-bg-btn);
   font-size: 25px;
-  /* font-family: proxima-nova, sans-serif; */
   margin: 0 10px;
   padding: 0.75rem;
   border: 1px solid;
@@ -40,18 +39,18 @@
 }
 
 .book-title > h2 {
-  color: #ffffff;
+  color: var(--tertiary-text-lib);
   background-color: var(--tertiary-bg-lib);
   position: absolute;
   top: -10%;
   right: 50%;
-  transform: translateX(50%);
   text-align: center;
   padding: 0.5rem 2rem;
+  transform: translateX(50%);
 }
 
 .book-details h2 {
-  font-family: freight-text-pro, serif;
+  font-family: var(--library-font-main);
   font-size: 1.3rem;
   font-weight: 400;
   font-style: normal;
@@ -59,7 +58,7 @@
 }
 
 .book-details p {
-  font-family: freight-text-pro, serif;
+  font-family: var(--library-font-main);
   font-size: 1rem;
   color: var(--primary-text-lib);
   max-width: 650px;

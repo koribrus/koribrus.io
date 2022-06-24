@@ -1,7 +1,7 @@
 .btn-lib {
   color: var(--tertiary-text-lib);
   background-color: var(--tertiary-bg-lib);
-  font-family: proxima-nova, sans-serif;
+  font-family: var(--library-font-secondary);
   margin: 0 10px;
   padding: 0.5rem 1rem;
   border: 1px solid;

@@ -1,8 +1,7 @@
 .projects {
-  transition: transform 1s, opacity var(--reveal-delay);
+  transition: transform var(--reveal-delay), opacity var(--reveal-delay);
 }
 
 .projects--hidden {
   opacity: 0;
-  /* transform: translateY(8rem); */
 }

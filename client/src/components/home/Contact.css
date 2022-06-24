@@ -2,12 +2,11 @@
   margin-right: 15rem;
   margin-bottom: 15rem;
   padding: 0 7.5rem;
-  transition: transform 1s, opacity var(--reveal-delay);
+  transition: transform var(--reveal-delay), opacity var(--reveal-delay);
 }
 
 .contact--hidden {
   opacity: 0;
-  /* transform: translateY(8rem); */
 }
 
 .contact-content {
@@ -34,7 +33,7 @@
   max-width: 350px;
   border-radius: 5px;
   opacity: 0.4;
-  transition: 0.5s ease opacity;
+  transition: var(--transition-time) ease opacity;
 }
 
 .contact-btn-container {
@@ -47,5 +46,5 @@
   font-size: 0.9rem;
   font-weight: 200 !important;
   padding: 1rem 2rem;
-  transition: 1s ease all;
+  transition: var(--transition-time) ease all;
 }

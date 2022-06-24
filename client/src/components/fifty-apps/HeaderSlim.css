@@ -1,5 +1,5 @@
 .header-p {
-  background-color: #f7f5f6;
+  background-color: var(--primary-bg-apps);
   height: 25vh;
 }
 
@@ -10,11 +10,11 @@
 /* ----- NAVBAR ----- */
 .navbar-lib {
   height: 7vh;
-  box-shadow: 0 1px 5px 2px #141414;
+  box-shadow: 0 1px 5px 2px var(--shadow-apps);
 }
 
 .navbar-top-p {
-  background-color: #7a7a7a;
+  background-color: var(--primary-text-apps);
   width: 100vw;
   height: 0.5vh;
 }
@@ -28,18 +28,17 @@
 
 /* ----- navbar logo ----- */
 .navbar-logo-p p {
-  color: #141414;
+  color: var(--secondary-text-apps);
   margin: 0;
 }
 
 .navbar-logo-p:hover p {
-  color: #7a7a7a;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .navbar-content-p p {
-  color: #141414;
-  font-family: proxima-nova, sans-serif;
+  color: var(--secondary-text-apps);
+  font-family: var(--apps-font-secondary);
   font-weight: 100;
   font-style: normal;
   font-size: 1.5rem;
@@ -62,8 +61,9 @@
 }
 
 .apps-menu-cntrl h4 {
-  color: #333333;
-  font-family: 'Segoe UI Variable semi-light', sans-serif;
+  /* color: #333333; */
+  color: var(--secondary-text-apps);
+  font-family: var(--apps-font-primary);
   font-size: 1rem;
   font-weight: 100;
   font-style: normal;
@@ -74,7 +74,7 @@
   bottom: 0;
   height: 1px;
   width: 100%;
-  background-color: #141414;
+  background-color: var(--secondary-text-apps);
 }
 
 /* ----- dropdown ----- */
@@ -82,21 +82,21 @@
   position: absolute;
   height: 0px;
   overflow: hidden;
-  transition: height ease 1s, box-shadow ease 1s;
+  transition: height ease var(--reveal-delay), box-shadow ease var(--reveal-delay);
 }
 
 .apps-dropdown {
   background: linear-gradient(to bottom, #f7f5f666, #b7afac);
-  color: #4c4c4c;
+  color: var(--secondary-text-apps);
   width: 272px;
 
-  font-family: 'Segoe UI Variable semi-light', sans-serif;
+  font-family: var(--apps-font-primary);
   list-style: none;
   padding-top: 1rem;
 }
 
 .apps-dropdown a {
-  color: #333333;
+  color: var(--secondary-text-apps);
   cursor: pointer;
 }
 
@@ -104,7 +104,7 @@
   display: flex;
   width: 100%;
   padding: 0.5rem;
-  border-bottom: 1px dotted #4c4c4c;
+  border-bottom: 1px dotted var(--secondary-text-apps);
 }
 
 .apps-dropdown-item:hover {
@@ -122,7 +122,7 @@
   text-align: middle;
   width: 23px;
   height: 23px;
-  color: #f7f5f6;
+  color: var(--primary-bg-apps);
   background-color: #7a7a7a80;
   font-size: 0.75rem;
   border-radius: 50%;
@@ -170,14 +170,4 @@
   font-style: normal;
   letter-spacing: 1px;
   padding: 0.5rem 0;
-}
-
-.banner-p p {
-  color: var(--tertiary-text-lib);
-  font-family: freight-big-pro, serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.7rem;
 }
