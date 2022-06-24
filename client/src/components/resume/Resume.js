@@ -3,13 +3,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
 import { fetchResume } from '../../redux/resume';
 import resumeAxios from '../../apis/resume';
-
 import ResumeSidebar from './ResumeSidebar';
 import School from './School';
 import Job from './Job';
-import profileImg from '../../img/kori-brus-profile.jpg';
 import './Resume.css';
 
 const Resume = () => {
@@ -59,7 +58,7 @@ const Resume = () => {
           <div className='resume-left'>
             <div className='resume-img-container'>
               <div className='resume-img'>
-                <img src={profileImg} alt='profile pic' />
+                <img src='/img/kori-brus-profile.jpg' alt='profile pic' />
               </div>
             </div>
             <div className='profile-summary'>

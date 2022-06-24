@@ -5,7 +5,6 @@ import { setAbout } from '../../redux/visibility';
 import useObserver from '../../hooks/useObserver';
 import Header from './Header';
 import './About.css';
-import profileImg from './../../img/kori-brus-profile.jpg';
 
 const About = () => {
   // * redux & ref
@@ -41,7 +40,7 @@ const About = () => {
         </div>
         <div className='img-container'>
           <div className='profile-img-bg'>
-            <img src={profileImg} alt='profile pic' className='profile-img' />
+            <img src='/img/kori-brus-profile.jpg' alt='profile pic' className='profile-img' />
           </div>
         </div>
       </div>

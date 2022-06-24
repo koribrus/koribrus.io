@@ -3,6 +3,10 @@
   padding-top: 10rem;
 }
 
+.introduction h2 {
+  margin-bottom: 2rem;
+}
+
 .bullet-columns {
   color: var(--primary-text);
   font-family: 'Roboto Mono', monospace;

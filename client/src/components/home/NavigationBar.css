@@ -27,14 +27,14 @@
   font-weight: 200 !important;
   color: var(--primary-text) !important;
   opacity: 1;
-  transition: 1s ease all;
+  transition: 0.5s ease all;
 }
 
 .paranthesis {
   color: var(--primary-text);
   letter-spacing: normal;
   opacity: 0;
-  transition: 1s ease all !important;
+  transition: 0.5s ease all !important;
 }
 
 .paranthesis-r {
@@ -46,7 +46,7 @@
   letter-spacing: -2px;
   opacity: 1;
   transform: translateX(5px) !important;
-  transition: 1s ease opacity;
+  transition: 0.5s ease opacity;
 }
 
 .nav-btn {
@@ -59,7 +59,7 @@
   padding: 0.5rem 1rem;
   border: 1px solid var(--highlight);
   border-radius: 3px;
-  transition: 1s ease all;
+  transition: 0.5s ease all;
 }
 
 .nav-btn a {

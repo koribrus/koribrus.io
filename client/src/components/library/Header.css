@@ -50,7 +50,8 @@
 .banner-lib {
   position: relative;
   height: 28vh;
-  background-image: url('../../img/glasses-old-books-desk.jpg');
+  /* background-image: url('../../img/glasses-old-books-desk.jpg'); */
+  background-image: url('../../../public/img/glasses-old-books-desk.jpg');
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
