@@ -1,18 +1,15 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { openModal } from '../../redux/modals';
 import { IoLogoGooglePlaystore } from 'react-icons/io5';
 import { BiBookReader } from 'react-icons/bi';
 import './BookDetail.css';
 
 const BookDetail = ({ book }) => {
-  const { showModal } = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 
   if (!book) return '';
-  console.log(showModal);
 
-  // console.log(book);
   return (
     <div className='book-details'>
       <div className='book-info'>

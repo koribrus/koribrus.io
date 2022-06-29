@@ -2,19 +2,17 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 15rem;
-  margin-right: 200px;
+  /* margin-right: 350px; */
+  /* margin-right: auto; */
   transition: transform var(--reveal-delay), opacity var(--reveal-delay);
+}
+
+.project-r {
+  max-width: 1100px;
 }
 
 .project--hidden {
   opacity: 0;
-}
-
-.project h4 {
-  color: var(--primary-text);
-  font-family: var(--primary-font-normal);
-  font-size: 1.5rem;
-  margin: 0;
 }
 
 .project h5 {
@@ -26,7 +24,8 @@
 }
 
 .project-r .column-left {
-  grid-column: 1 / 7;
+  grid-column: 1 / 9;
+  grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -39,10 +38,14 @@
 .project-r .column-right {
   position: relative;
   grid-column: 7 / 13;
+  grid-row: 1 / 2;
+  z-index: 2;
 }
 
 .project-r .project-img {
-  min-width: 750px;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
   border-radius: 5px;
   background-color: var(--highlight);
 }
@@ -65,7 +68,9 @@
 
 .project-r .project-img video {
   display: block;
+  width: 100%;
   max-width: 750px;
+  height: auto;
   opacity: 0.4;
   border-radius: 5px;
   transition: var(--transition-time) ease opacity;
@@ -87,22 +92,30 @@
 }
 
 .project-r .project-heading {
+  position: relative;
   text-align: right;
+  z-index: 2;
 }
 
 .project-r .project-content {
   position: absolute;
   bottom: 20%;
   right: 0;
+  min-width: 450px;
   background-color: var(--bg-secondary);
   padding: 1.5rem;
   z-index: 2;
 }
 
 .project-r .column-right .icons {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   padding: 1rem;
   color: var(--primary-text);
+  z-index: 2;
+}
+
+@media (max-width: 480px) {
 }

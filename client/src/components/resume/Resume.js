@@ -83,12 +83,12 @@ const Resume = () => {
           <div className='resume-right'>
             <div className='resume-header'>
               <h2>{basics.name}</h2>
-              <div className='objective'>
+              <p className='objective'>
                 A communications professional launching a career in full stack web development.
                 Proficiency in JavaScript, CSS/HTML and specializing in the React/Redux environment.
                 A natural problem solver and committed learner, I am excited to expand my experience
                 into new applications and challenges.
-              </div>
+              </p>
             </div>
             <div className='resume-content'>
               <section className='projects'>

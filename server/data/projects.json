@@ -1,29 +1,32 @@
 [
   {
     "header": ["project", "koribrus.photography"],
-    "content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>",
-    "technologies": ["html/css", "responsive design", "javascript"],
+    "content": "<p>My personal photography site and first full scale, independent web project.</p><p>Written exclusively in JavaScript, CSS and HTML, the site features parallax scrolling with a dynamically scaled background; custom layouts for mobile, landscape and web; and contact form handling with PHP.</p>",
+    "technologies": ["javascript", "responsive design", "html/css", "php"],
     "gitURL": "https://github.com/koribrus/koribrus.photography",
     "URL": "https://koribrus.photography/",
     "img": "koribrus-photography.png",
+    "vid": "koribrus-photo-vid.mp4",
     "alt": "screenshot of koribrus.photography"
   },
   {
     "header": ["project", "the library"],
-    "content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>",
-    "technologies": ["react", "google api", "redux toolkit"],
-    "gitURL": "https://github.com/koribrus/koribrus.photography",
+    "content": "<p>The Library is a React app showcasing my personal reading lists.</p><p>The book list content is dynamically rendered through calls to the Google Books API with application state management via Redux and Redux Toolkit. An integrated reader allows book previews with a fullscreen option. Carousel list scrolling adds easy browsing. </p>",
+    "technologies": ["react", "redux toolkit", "google api", "axios"],
+    "gitURL": "https://github.com/koribrus/the-library",
     "path": "/library",
     "img": "library.jpg",
+    "vid": "the-library.mp4",
     "alt": "screenshot of library app"
   },
   {
     "header": ["project", "50 react apps"],
-    "content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut</p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia</p>",
-    "technologies": ["react", "javascript", "html/css"],
-    "gitURL": "https://github.com/koribrus/koribrus.photography",
+    "content": "<p>Fifty React Apps is a re-visioning of the udemy online course <a href='https://www.udemy.com/course/50-projects-50-days/' rel='noreferrer' target='_blank' style='color: var(--highlight); font-weight: bold'>50 Projects in 50 Days</a>. </p><p>I’m recreating each project into a React component to serve both as a toolkit for future projects and to hone my React and JavaScript skills. The containing project serves as a UI for browsing completed apps and features a smooth transition dropdown menu. Currently 2/50 complete.</p>",
+    "technologies": ["react", "javascript", "redux", "html/css"],
+    "gitURL": "https://github.com/koribrus/50-react-apps",
     "path": "/fifty-apps",
     "img": "fifty-apps.jpg",
+    "vid": "50-apps.mp4",
     "alt": "screenshot of 50 apps project"
   }
 ]

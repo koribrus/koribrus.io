@@ -1,8 +1,6 @@
 .skills {
   font-family: var(--primary-font-bold);
-  padding-left: 15rem;
-  padding-right: 7.5rem;
-  margin-right: 15rem;
+  margin-left: 12rem;
   margin-bottom: 20rem;
   transition: transform var(--reveal-delay), opacity var(--reveal-delay);
 }
@@ -30,6 +28,10 @@
   margin-bottom: 1rem;
 }
 
+.skill-bars {
+  max-width: 785px;
+}
+
 .skill-bar {
   padding-right: 1rem;
 }
@@ -39,7 +41,7 @@
   justify-content: space-between;
 }
 
-.skill-bar h4 {
+.skill-bar h6 {
   color: var(--primary-text);
 }
 
@@ -49,6 +51,7 @@
   max-width: 85%;
   height: 20px;
   margin-bottom: 0.75rem;
+  margin-left: 1rem;
   overflow: hidden;
   border-radius: 5px;
 }
@@ -57,4 +60,7 @@
   background-color: var(--highlight);
   height: 100%;
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
 }

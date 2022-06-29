@@ -61,7 +61,6 @@
 }
 
 .apps-menu-cntrl h4 {
-  /* color: #333333; */
   color: var(--secondary-text-apps);
   font-family: var(--apps-font-primary);
   font-size: 1rem;
@@ -89,8 +88,8 @@
   background: linear-gradient(to bottom, #f7f5f666, #b7afac);
   color: var(--secondary-text-apps);
   width: 272px;
-
   font-family: var(--apps-font-primary);
+  font-size: 0.9rem;
   list-style: none;
   padding-top: 1rem;
 }
@@ -165,8 +164,8 @@
 
 .banner-p h1 {
   color: var(--tertiary-text-lib);
-  font-family: 'Segoe UI Variable light', serif;
-  font-weight: 400;
+  font-family: var(--apps-font-primary);
+  font-weight: 200;
   font-style: normal;
   letter-spacing: 1px;
   padding: 0.5rem 0;

@@ -19,6 +19,7 @@
 .bullet-columns ul {
   list-style: none;
 }
+
 .bullet-columns ul li::before {
   content: '\2022';
   color: var(--highlight);
@@ -29,7 +30,7 @@
 }
 
 .intro-content {
-  width: 42rem;
+  max-width: 42rem;
 }
 
 /* animation */
@@ -60,4 +61,7 @@
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+@media (max-width: 480px) {
 }

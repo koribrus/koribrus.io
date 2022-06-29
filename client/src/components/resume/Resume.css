@@ -6,16 +6,16 @@ section {
 .resume h4,
 .resume h5,
 .resume h6 {
-  font-family: var(--resume-font-bold);
-  font-weight: 400;
+  font-family: var(--resume-font);
+  font-weight: 600;
   font-style: normal;
 }
 
 .resume h2 {
   color: var(--resume-bg-primary);
   text-align: right;
-  font-family: var(--resume-font-bold);
-  font-weight: 400;
+  font-family: var(--resume-font);
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -34,11 +34,23 @@ section {
   font-size: 0.75rem;
 }
 
+.resume li {
+  color: var(--resume-text-1);
+  font-family: var(--resume-font-main);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: normal;
+  padding: 0;
+}
+
 .resume p {
   color: var(--resume-text-1);
   font-family: var(--resume-font-main);
+  font-weight: 300;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  line-height: normal;
   margin-top: 0.5rem;
 }
 
@@ -58,7 +70,7 @@ section {
 /* ----- LEFT COLUMN ----- */
 
 .resume-left {
-  position: sticky !important;
+  position: sticky;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -124,7 +136,7 @@ section {
 .resume-btn {
   font-family: var(--resume-font-secondary);
   font-size: 0.9rem;
-  font-weight: 200 !important;
+  font-weight: 200;
   color: var(--highlight);
   background-color: var(--resume-bg-secondary);
   opacity: 1;
