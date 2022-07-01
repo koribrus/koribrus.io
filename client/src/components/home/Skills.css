@@ -62,5 +62,13 @@
   text-align: center;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .skills {
+    margin-left: 0rem;
+    margin-bottom: 10rem;
+  }
+
+  .progress {
+    max-width: 225px;
+  }
 }

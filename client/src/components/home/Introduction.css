@@ -63,5 +63,15 @@
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .introduction {
+    max-width: 480px;
+    margin-bottom: 10rem;
+  }
+  .introduction h1 {
+    font-size: 3rem;
+  }
+  .introduction h2 {
+    font-size: 2rem;
+  }
 }

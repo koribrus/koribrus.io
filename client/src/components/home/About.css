@@ -43,5 +43,11 @@
   opacity: 1;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .about {
+    margin-left: 0;
+  }
+  .about-content {
+    flex-direction: column;
+  }
 }

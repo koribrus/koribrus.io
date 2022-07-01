@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   margin-bottom: 15rem;
-  /* margin-right: 200px; */
   transition: transform var(--reveal-delay), opacity var(--reveal-delay);
 }
 
@@ -43,7 +42,6 @@
 }
 
 .project-l .project-img {
-  /* min-width: 750px; */
   width: 100%;
   max-width: 750px;
   height: auto;
@@ -112,5 +110,8 @@
   z-index: 2;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .project-l {
+    display: none !important;
+  }
 }

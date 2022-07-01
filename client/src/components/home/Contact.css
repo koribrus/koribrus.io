@@ -1,5 +1,4 @@
 .contact {
-  /* margin-left: 6rem; */
   margin-right: auto;
   margin-bottom: 15rem;
   transition: transform var(--reveal-delay), opacity var(--reveal-delay);
@@ -49,5 +48,14 @@
   transition: var(--transition-time) ease all;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .contact {
+    margin-bottom: 10rem;
+  }
+
+  .contact-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }

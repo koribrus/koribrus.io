@@ -26,7 +26,7 @@ class Home extends React.Component {
     return (
       <div className='app-grid'>
         <Sidebar />
-        <NavigationBar />
+        {/* <NavigationBar /> */}
         <div className='main-content'>
           <Introduction />
           <About />

@@ -7,6 +7,7 @@ import slidesReducer from './slides';
 import visibilityReducer from './visibility';
 import dropdownReducer from './dropdown';
 import modalReducer from './modals';
+import displayReducer from './display';
 
 export default configureStore({
   reducer: {
@@ -18,5 +19,6 @@ export default configureStore({
     visibility: visibilityReducer,
     dropdown: dropdownReducer,
     modal: modalReducer,
+    display: displayReducer,
   },
 });

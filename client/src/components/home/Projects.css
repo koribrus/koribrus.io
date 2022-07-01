@@ -5,3 +5,9 @@
 .projects--hidden {
   opacity: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .projects {
+    margin-bottom: 10rem;
+  }
+}

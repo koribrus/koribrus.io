@@ -1,10 +1,12 @@
 import React, { useEffect, useCallback, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import useObserver from '../../hooks/useObserver';
-import { setProjects } from '../../redux/visibility';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+
+import useObserver from '../../hooks/useObserver';
+import { setProjects } from '../../redux/visibility';
+import { setDesktop } from '../../redux/display';
 import { setProject1, setProject2, setProject3 } from '../../redux/visibility';
 import { load } from '../../redux/projects';
 
@@ -17,6 +19,7 @@ const Projects = () => {
   // * state
   const { projects } = useSelector((state) => state.projects);
   const { projectsVisible } = useSelector((state) => state.visibility);
+  const { desktop } = useSelector((state) => state.display);
 
   // * hooks
   const projectsRef = useRef();
@@ -35,6 +38,17 @@ const Projects = () => {
 
     fetchProjects();
   }, [stableDispatch]);
+
+  // * set screen size state
+  const screenSizeRender = () => {
+    dispatch(setDesktop(window.innerWidth > 480));
+  };
+
+  useEffect(() => {
+    dispatch(setDesktop(window.innerWidth > 480));
+    window.addEventListener('resize', screenSizeRender);
+    return () => window.removeEventListener('resize', screenSizeRender);
+  });
 
   // * ----- RENDER FUNCTIONS -----
   // * deployment link
@@ -76,6 +90,7 @@ const Projects = () => {
             tags={renderTags}
             index={index}
             action={actionArray[index]}
+            desktop={desktop}
             key={index}
           />
         );
@@ -87,6 +102,7 @@ const Projects = () => {
             tags={renderTags}
             index={index}
             action={actionArray[index]}
+            desktop={desktop}
             key={index}
           />
         );

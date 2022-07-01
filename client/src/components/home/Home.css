@@ -1,13 +1,21 @@
 .app-grid {
   display: grid;
-  /* grid-template-columns: 150px auto 150px; */
   grid-template-columns: 1fr 11fr;
   grid-template-rows: auto;
 }
 
 .main-content {
-  padding-left: 15rem;
+  padding-left: 13rem;
+  padding-right: 2rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    padding-left: 0;
+    width: 100vw;
+  }
 }
