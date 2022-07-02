@@ -4,18 +4,25 @@
   grid-template-rows: auto;
 }
 
+.app-grid--mobile-nav-open {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .main-content {
   padding-left: 13rem;
-  padding-right: 2rem;
 }
 
 @media screen and (max-width: 480px) {
   .app-grid {
     grid-template-columns: 1fr;
+    /* height: 100vh;
+    overflow: hidden; */
   }
 
   .main-content {
     padding-left: 0;
+    padding: 0 2rem;
     width: 100vw;
   }
 }

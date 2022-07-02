@@ -6,7 +6,7 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 import useObserver from '../../hooks/useObserver';
 import { setProjects } from '../../redux/visibility';
-import { setDesktop } from '../../redux/display';
+// import { setDesktop } from '../../redux/display';
 import { setProject1, setProject2, setProject3 } from '../../redux/visibility';
 import { load } from '../../redux/projects';
 
@@ -40,15 +40,15 @@ const Projects = () => {
   }, [stableDispatch]);
 
   // * set screen size state
-  const screenSizeRender = () => {
-    dispatch(setDesktop(window.innerWidth > 480));
-  };
+  // const screenSizeRender = () => {
+  //   dispatch(setDesktop(window.innerWidth > 480));
+  // };
 
-  useEffect(() => {
-    dispatch(setDesktop(window.innerWidth > 480));
-    window.addEventListener('resize', screenSizeRender);
-    return () => window.removeEventListener('resize', screenSizeRender);
-  });
+  // useEffect(() => {
+  //   dispatch(setDesktop(window.innerWidth > 480));
+  //   window.addEventListener('resize', screenSizeRender);
+  //   return () => window.removeEventListener('resize', screenSizeRender);
+  // });
 
   // * ----- RENDER FUNCTIONS -----
   // * deployment link

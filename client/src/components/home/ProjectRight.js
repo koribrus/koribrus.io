@@ -15,6 +15,7 @@ const ProjectRight = ({ project, link, tags, index, action, desktop }) => {
 
   useObserver(ref, action);
 
+  // * desktop is a prop passed in from Projects.js indicating if the viewport is in desktop or mobile size (boolean)
   const renderProject = () => {
     if (desktop) {
       return (

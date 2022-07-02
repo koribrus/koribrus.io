@@ -4,14 +4,17 @@ const displaySlice = createSlice({
   name: 'display',
   initialState: {
     desktop: true,
+    menuOpen: false,
   },
   reducers: {
     setDesktop: (state, action) => {
-      // state.desktop = !state.desktop;
       state.desktop = action.payload;
+    },
+    setMenuOpen: (state) => {
+      state.menuOpen = !state.menuOpen;
     },
   },
 });
 
-export const { setDesktop } = displaySlice.actions;
+export const { setDesktop, setMenuOpen } = displaySlice.actions;
 export default displaySlice.reducer;

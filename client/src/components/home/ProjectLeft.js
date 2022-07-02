@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import './ProjectLeft.css';
 
 const ProjectLeft = ({ project, link, tags, index, action, desktop }) => {
-  // * state (variable calculated from props)
+  // * state from visibility.js, in conjunction with the useObserver custom hook, drives the scroll into view transitions of each component (projectState variable is a string constructed from visibiility state object and the index passed to ProjectRight from props)
   const state = useSelector((state) => state.visibility);
   const projectState = state[`project${index + 1}Visible`];
 
@@ -15,6 +15,7 @@ const ProjectLeft = ({ project, link, tags, index, action, desktop }) => {
 
   useObserver(ref, action);
 
+  // * desktop is a prop passed in from Projects.js indicating if the viewport is in desktop or mobile size (boolean)
   const renderProject = () => {
     if (desktop) {
       return (

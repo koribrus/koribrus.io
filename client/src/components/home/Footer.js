@@ -6,9 +6,9 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer-item-1'>koribrus.io</div>
       <div className='footer-item-2'>
-        Design inspired by{' '}
+        Design inspiration |{' '}
         <a href='https://brittanychiang.com/' rel='noreferrer' target='_blank'>
-          Brittany Chiang
+          brittanychiang.com
         </a>
       </div>
     </div>
