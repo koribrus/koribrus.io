@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const displaySlice = createSlice({
   name: 'display',
   initialState: {
-    desktop: true,
+    desktop: null,
     menuOpen: false,
   },
   reducers: {

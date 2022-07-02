@@ -21,4 +21,9 @@ export default configureStore({
     modal: modalReducer,
     display: displayReducer,
   },
+  preloadedState: {
+    display: {
+      desktop: window.innerWidth > 480,
+    },
+  },
 });

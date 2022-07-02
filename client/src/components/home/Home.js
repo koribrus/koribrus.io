@@ -18,8 +18,8 @@ const Home = () => {
   const { menuOpen } = useSelector((state) => state.display);
   const dispatch = useDispatch();
 
-  // * set initial screen size state (desktop vs mobile)
-  dispatch(setDesktop(window.innerWidth > 480));
+  // // * set initial screen size state (desktop vs mobile)
+  // dispatch(setDesktop(window.innerWidth > 480));
 
   // * test node server
   useEffect(() => {

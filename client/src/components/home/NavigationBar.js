@@ -80,7 +80,9 @@ const NavigationBar = () => {
                   >
                     <a className='nav-link' href='/'>
                       <span className='nav-bullet'>{'>>'}</span>
-                      <div>about</div>
+                      <span className='paranthesis'>(</span>
+                      about
+                      <span className='paranthesis paranthesis-r'>)</span>
                     </a>
                   </li>
                   <li
