@@ -15,8 +15,10 @@ const BookViewerTwo = ({ width, height }) => {
           border: '0px',
         }}
         src={`https://books.google.ca/books?id=${selectedBook.id}&newbks=0&pg=PP1&output=embed`}
-        width='533'
-        height='800'
+        width={width}
+        height={height}
+        // width='533'
+        // height='800'
         frameBorder='0'
         scrolling='no'
       ></iframe>

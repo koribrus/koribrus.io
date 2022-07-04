@@ -11,7 +11,12 @@ const LibraryModal = ({ visible }) => {
   return ReactDOM.createPortal(
     <div className='modal' onClick={() => dispatch(closeModal())}>
       <div className='modal-container'>
-        <BookViewerTwo />
+        {/* <BookViewerTwo /> */}
+        {window.innerWidth > 480 ? (
+          <BookViewerTwo width={'533'} height={'800'} />
+        ) : (
+          <BookViewerTwo width={'384'} height={'575'} />
+        )}
       </div>
     </div>,
     document.getElementById('modal')
