@@ -47,7 +47,7 @@
   justify-content: center;
   max-width: 1165.33px;
   transition: var(--transition-time) ease;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .booklist-container {
@@ -55,7 +55,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  /* overflow: hidden; */
 }
 
 .book-view {
@@ -65,10 +64,28 @@
   align-self: center;
 }
 
+.overlay-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42%;
+  height: 100%;
+  background-image: radial-gradient(445px at 80% 50%, #ffffff, #0000);
+}
+
+.overlay-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42%;
+  height: 100%;
+  background-image: radial-gradient(445px at 20% 50%, #ffffff, #0000);
+}
+
 @media screen and (max-width: 480px) {
   .app-lib {
     height: 75vh;
-    /* background: var(--tertiary-text-lib); */
+    background: var(--tertiary-text-lib);
   }
 
   .book-view {
@@ -85,5 +102,14 @@
 
   .column-left-lib {
     padding: 0;
+  }
+
+  .column-insert {
+    border: none;
+  }
+
+  .overlay-left,
+  .overlay-right {
+    display: none;
   }
 }

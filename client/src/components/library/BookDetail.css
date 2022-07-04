@@ -39,8 +39,8 @@
 }
 
 .book-title > h2 {
-  color: var(--tertiary-text-lib);
-  background-color: var(--tertiary-bg-lib);
+  /* color: var(--tertiary-text-lib);
+  background-color: var(--tertiary-bg-lib); */
   position: absolute;
   top: -10%;
   right: 50%;
@@ -89,6 +89,6 @@
     top: 00;
     width: 100%;
     color: var(--primary-text-lib);
-    background-color: var(--tertiary-text-lib);
+    background-color: none;
   }
 }

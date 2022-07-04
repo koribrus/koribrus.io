@@ -10,6 +10,6 @@
 
 @media screen and (max-width: 480px) {
   .shelves {
-    padding: 0;
+    padding: 1.5rem 0;
   }
 }

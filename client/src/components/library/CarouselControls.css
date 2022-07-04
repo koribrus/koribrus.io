@@ -52,3 +52,9 @@
   justify-content: center;
   margin-right: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  .btn-carousel {
+    opacity: 1 !important;
+  }
+}
