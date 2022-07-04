@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 const CarouselControls = ({ prev, next }) => {
   return (
-    <div>
+    <div className='carousel-controls'>
       <button className='btn-carousel prev' onClick={prev}>
         <div className='icon-lib icon-left'>
           <IoIosArrowBack />

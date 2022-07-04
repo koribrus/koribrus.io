@@ -20,7 +20,10 @@ const BookList = () => {
   // * render book list
   // adjustment changes the starting point of the list to the center point.
   const renderBooks = () => {
-    const adjustment = Math.ceil(books.length / 2) - 4;
+    // const adjustment = Math.ceil(books.length / 2) - 4;
+    // const adjustment = Math.ceil(books.length / 2) - 1;
+    const adjustment = Math.floor(books.length / 2);
+    // const adjustment = 0;
     const renderedBooks = books.map((book) => (
       <BookItem
         book={book}
@@ -54,10 +57,10 @@ const BookList = () => {
     <div className='list-lib'>
       <div className='carousel'>
         {renderBooks()}
-        <div className='overlay-left'></div>
-        <div className='overlay-right'></div>
+        {/* <div className='overlay-left'></div>
+        <div className='overlay-right'></div> */}
       </div>
-      <CarouselControls prev={prev} next={next} />
+      {/* <CarouselControls prev={prev} next={next} /> */}
     </div>
   );
 };

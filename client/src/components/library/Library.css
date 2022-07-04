@@ -1,9 +1,16 @@
+.library {
+  width: 100vw;
+  /* height: 100vh;
+  overflow: hidden; */
+}
+
 .app-lib {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: var(--primary-bg-lib);
   height: 65vh;
+  width: 100%;
 }
 
 .grid-lib {
@@ -34,8 +41,21 @@
 }
 
 .book-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 1165.33px;
   transition: var(--transition-time) ease;
+  /* overflow: hidden; */
+}
+
+.booklist-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .book-view {
@@ -43,4 +63,27 @@
   justify-content: center;
   align-items: center;
   align-self: center;
+}
+
+@media screen and (max-width: 480px) {
+  .app-lib {
+    height: 75vh;
+    /* background: var(--tertiary-text-lib); */
+  }
+
+  .book-view {
+    display: none;
+  }
+
+  .container-lib {
+    padding: 0;
+  }
+
+  .column-lib {
+    width: 100vw;
+  }
+
+  .column-left-lib {
+    padding: 0;
+  }
 }

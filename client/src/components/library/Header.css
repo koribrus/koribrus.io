@@ -89,3 +89,32 @@
 .banner-content-lib {
   max-width: 400px;
 }
+
+@media screen and (max-width: 480px) {
+  .header-lib {
+    background-color: var(--primary-bg-lib);
+    height: 25vh;
+  }
+
+  .navbar-lib {
+    height: 5vh;
+  }
+
+  .navbar-content-lib {
+    justify-content: flex-start;
+    height: 4.5vh;
+  }
+
+  .navbar-content-lib p {
+    padding: 0 2rem;
+  }
+
+  .banner-lib {
+    height: 22vh;
+  }
+
+  .overlay-lib {
+    padding: 0 2rem;
+    padding-top: 0.25rem;
+  }
+}

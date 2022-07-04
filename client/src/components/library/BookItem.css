@@ -47,3 +47,9 @@
   font-family: var(--library-font-secondary);
   font-size: 13px;
 }
+
+@media screen and (max-width: 480px) {
+  /* .card-lib {
+    height: 225px;
+  } */
+}

@@ -7,3 +7,9 @@
   width: 100%;
   padding: 1.5em;
 }
+
+@media screen and (max-width: 480px) {
+  .shelves {
+    padding: 0;
+  }
+}

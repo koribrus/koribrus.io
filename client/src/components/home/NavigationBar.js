@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setMenuOpen } from '../../redux/display';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
+  // * defined hooks
+  const toggler = useRef();
   const dispatch = useDispatch();
+
   // * state of viewport display (desktop vs mobile)
   const { desktop } = useSelector((state) => state.display);
 
@@ -14,6 +17,20 @@ const NavigationBar = () => {
     window.history.replaceState(null, '', `/${section}`);
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
   };
+
+  // const toggleToggler = (section) => {
+  //   setSection(section);
+  //   console.log(toggler.current);
+  //   toggler.current.checked = false;
+  //   dispatch(setMenuOpen());
+  //   setTimeout(() => {
+  //     smoothScroll(section);
+  //     // smoothScroll('about');
+  //     // console.log(toggler.current);
+  //     // toggler.current.checked = false;
+  //     // dispatch(setMenuOpen());
+  //   }, 5000);
+  // };
 
   const renderNavigation = () => {
     if (desktop) {
@@ -66,7 +83,14 @@ const NavigationBar = () => {
       return (
         <div className='mobile-navbar'>
           <img src='/img/kb-logo-v1.png' alt='KB logo' />
-          <input type='checkbox' className='toggler' onClick={() => dispatch(setMenuOpen())} />
+          <input
+            type='checkbox'
+            className='toggler'
+            ref={toggler}
+            onClick={() => {
+              dispatch(setMenuOpen());
+            }}
+          />
           <div className='hamburger'>
             <div></div>
           </div>
@@ -108,7 +132,7 @@ const NavigationBar = () => {
                     </a>
                   </li>
                   <li className='nav-item animate-nav animate-nav-4 btn'>
-                    <a href={'/files/koribrus-resume.pdf'} className='nav-btn'>
+                    <a href={'/files/koribrus-resume.pdf'} className='nav-btn' download>
                       Resume
                     </a>
                   </li>
