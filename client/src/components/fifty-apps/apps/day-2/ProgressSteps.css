@@ -91,3 +91,14 @@
   background-color: var(--line-border-empty);
   cursor: not-allowed;
 }
+
+@media screen and (max-width: 920px) {
+  .container-pro {
+    padding: 0 1.5rem;
+  }
+
+  .progress-container {
+    width: 350px;
+    max-width: 100%;
+  }
+}

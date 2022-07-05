@@ -39,17 +39,6 @@ const Projects = () => {
     fetchProjects();
   }, [stableDispatch]);
 
-  // * set screen size state
-  // const screenSizeRender = () => {
-  //   dispatch(setDesktop(window.innerWidth > 480));
-  // };
-
-  // useEffect(() => {
-  //   dispatch(setDesktop(window.innerWidth > 480));
-  //   window.addEventListener('resize', screenSizeRender);
-  //   return () => window.removeEventListener('resize', screenSizeRender);
-  // });
-
   // * ----- RENDER FUNCTIONS -----
   // * deployment link
   const renderLink = (project) => {

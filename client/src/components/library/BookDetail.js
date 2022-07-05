@@ -14,7 +14,9 @@ const BookDetail = ({ book }) => {
     <div className='book-details'>
       <div className='book-info'>
         <div className='book-title'>
-          <h2>{`${book.volumeInfo.title} (${book.volumeInfo.publishedDate.slice(0, 4)})`}</h2>
+          <h2 className='book-title-h2'>{`${
+            book.volumeInfo.title
+          } (${book.volumeInfo.publishedDate.slice(0, 4)})`}</h2>
         </div>
         <p>{book.volumeInfo.description}</p>
       </div>

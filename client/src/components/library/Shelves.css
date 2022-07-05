@@ -8,8 +8,8 @@
   padding: 1.5em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 920px) {
   .shelves {
-    padding: 1.5rem 0;
+    padding: 0;
   }
 }

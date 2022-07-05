@@ -82,7 +82,7 @@
   background-image: radial-gradient(445px at 20% 50%, #ffffff, #0000);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 920px) {
   .app-lib {
     height: 75vh;
     background: var(--tertiary-text-lib);
