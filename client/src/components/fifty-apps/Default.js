@@ -28,6 +28,7 @@ const Default = () => {
                 </p>
                 <p>
                   Project concepts are taken from the course authors. All React coding is my own.
+                  Access individual apps from the dropdown menu at the top of the page.
                 </p>
               </div>
             </div>

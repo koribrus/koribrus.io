@@ -1,12 +1,21 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { close } from '../../redux/dropdown';
 import Menu from './Menu';
 import './HeaderSlim.css';
 
 const HeaderSlim = () => {
+  const dispatch = useDispatch();
+
+  // * Dropdown close for mobile click
+  const clickDropDownItem = () => {
+    setTimeout(() => dispatch(close()), 100);
+  };
+
   return (
     <div className='header-p'>
-      <div className='navbar-lib'>
+      <div className='navbar-p'>
         <div className='navbar-top-p'></div>
         <div className='navbar-content-p'>
           <Link className='navbar-logo-p' to='/'>
@@ -14,13 +23,13 @@ const HeaderSlim = () => {
           </Link>
           <Menu>
             <ul type='1' className='apps-dropdown'>
-              <Link to='/fifty-apps/1'>
+              <Link to='/fifty-apps/1' onClick={clickDropDownItem}>
                 <li className='apps-dropdown-item'>
                   <span className='dropdown-count'>1</span>
                   expanding cards
                 </li>
               </Link>
-              <Link to='/fifty-apps/2'>
+              <Link to='/fifty-apps/2' onClick={clickDropDownItem}>
                 <li className='apps-dropdown-item'>
                   <span className='dropdown-count'>2</span>
                   progress steps
