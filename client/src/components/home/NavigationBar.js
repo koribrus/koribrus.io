@@ -1,46 +1,44 @@
-import React, { useRef, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { setMenuOpen } from '../../redux/display';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
 const NavigationBar = React.memo(() => {
-  // * defined hooks
-  // const toggler = useRef();
-  const dispatch = useDispatch();
-
   // * state of viewport display (desktop vs mobile)
   const { desktop } = useSelector((state) => state.display);
 
-  // const home = document.querySelector('.app-grid');
-
+  // * handling nav menu click events
   useEffect(() => {
     if (desktop) return;
 
     const navBtns = document.querySelectorAll('.nav-item');
     const toggler = document.querySelector('.toggler');
 
-    navBtns.forEach((btn) =>
-      btn.addEventListener('click', (e) => {
-        const home = document.querySelector('.app-grid');
-        const section = btn.innerText.slice(3);
+    const handleNavClick = (e, btn) => {
+      const home = document.querySelector('.app-grid');
+      const section = btn.innerText.slice(3);
 
-        home.style.overflow = 'visible';
-        home.style.height = 'auto';
+      home.style.overflow = 'visible';
+      home.style.height = 'auto';
 
-        smoothScroll(e, section);
+      smoothScroll(e, section);
 
-        toggler.checked = false;
-      })
-    );
+      toggler.checked = false;
+    };
+
+    navBtns.forEach((btn) => btn.addEventListener('click', (e) => handleNavClick(e, btn)));
+
+    return () =>
+      navBtns.forEach((btn) => btn.removeEventListener('click', (e) => handleNavClick(e, btn)));
   });
 
+  // * handling nav menu toggler
   useEffect(() => {
     if (desktop) return;
 
     const toggler = document.querySelector('.toggler');
 
-    toggler.addEventListener('click', (e) => {
+    const handleToggler = () => {
       const home = document.querySelector('.app-grid');
 
       if (toggler.checked) {
@@ -51,29 +49,21 @@ const NavigationBar = React.memo(() => {
         home.style.overflow = 'visible';
         home.style.height = 'auto';
       }
-    });
+    };
+
+    toggler.addEventListener('click', handleToggler);
+
+    return () => toggler.removeEventListener('click', handleToggler);
   });
 
+  // * smooth scrolling to page sections
   const smoothScroll = (e, section) => {
     window.history.replaceState(null, '', `/${section}`);
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
     e.preventDefault();
   };
 
-  // const toggleToggler = (section) => {
-  //   setSection(section);
-  //   console.log(toggler.current);
-  //   toggler.current.checked = false;
-  //   dispatch(setMenuOpen());
-  //   setTimeout(() => {
-  //     smoothScroll(section);
-  //     // smoothScroll('about');
-  //     // console.log(toggler.current);
-  //     // toggler.current.checked = false;
-  //     // dispatch(setMenuOpen());
-  //   }, 5000);
-  // };
-
+  // * conditional rendering for desktop vs mobile
   const renderNavigation = () => {
     if (desktop) {
       return (
@@ -125,14 +115,7 @@ const NavigationBar = React.memo(() => {
       return (
         <div className='mobile-navbar'>
           <img src='/img/kb-logo-v1.png' alt='KB logo' />
-          <input
-            type='checkbox'
-            className='toggler'
-            // ref={toggler}
-            // onClick={() => {
-            //   dispatch(setMenuOpen());
-            // }}
-          />
+          <input type='checkbox' className='toggler' />
           <div className='hamburger'>
             <div></div>
           </div>
@@ -140,41 +123,26 @@ const NavigationBar = React.memo(() => {
             <div>
               <div>
                 <ul>
-                  <li
-                    className='nav-item animate-nav animate-nav-1'
-                    // onClick={(e) => smoothScroll(e, 'about')}
-                  >
+                  <li className='nav-item animate-nav animate-nav-1'>
                     <div className='nav-link'>
                       <span className='nav-bullet'>{'>> '}</span>
                       about
                     </div>
                   </li>
-                  <li
-                    className='nav-item animate-nav animate-nav-2'
-                    onClick={(e) => {
-                      smoothScroll(e, 'projects');
-                      console.log(document.querySelector('.toggler'));
-                    }}
-                  >
-                    <a className='nav-link' href='/'>
-                      <span className='nav-bullet'>{'>>'}</span>
-                      <span className='paranthesis'>(</span>
+                  <li className='nav-item animate-nav animate-nav-2'>
+                    <div className='nav-link'>
+                      <span className='nav-bullet'>{'>> '}</span>
+
                       <span className='nav-name'>projects</span>
-                      <span className='paranthesis paranthesis-r'>)</span>
-                    </a>
+                    </div>
                   </li>
-                  <li
-                    className='nav-item animate-nav animate-nav-3'
-                    onClick={(e) => smoothScroll(e, 'contact')}
-                  >
-                    <a className='nav-link' href='/'>
-                      <span className='nav-bullet'>{'>>'}</span>
-                      <span className='paranthesis'>(</span>
+                  <li className='nav-item animate-nav animate-nav-3'>
+                    <div className='nav-link'>
+                      <span className='nav-bullet'>{'>> '}</span>
                       contact
-                      <span className='paranthesis paranthesis-r'>)</span>
-                    </a>
+                    </div>
                   </li>
-                  <li className='nav-item animate-nav animate-nav-4 btn'>
+                  <li className='animate-nav animate-nav-4 btn'>
                     <a href={'/files/koribrus-resume.pdf'} className='nav-btn' download>
                       Resume
                     </a>
