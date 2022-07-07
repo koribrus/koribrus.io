@@ -13,6 +13,7 @@ const ProjectLeft = ({ project, link, tags, index, action, desktop }) => {
   // * ref for changing classes on observe event
   const ref = useRef();
 
+  // * useObserver custom hook for reveal on scroll
   useObserver(ref, action);
 
   // * desktop is a prop passed in from Projects.js indicating if the viewport is in desktop or mobile size (boolean)

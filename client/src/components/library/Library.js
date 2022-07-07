@@ -8,7 +8,6 @@ import BookDetail from './BookDetail';
 import BookViewer from './BookViewer';
 import LibraryModal from '../modals/LibraryModal';
 import CarouselControls from './CarouselControls';
-// import { fetchBooks } from '../redux/books';
 import { fetchBooks } from '../../redux/books';
 import { setCurrent } from '../../redux/slides';
 import './Library.css';
@@ -33,7 +32,6 @@ const Library = () => {
   // * carousel button control functions (adjustment variable changes the logic so that the list scrolls and stops on either end given an intial centering orientation for all items)
   const prev = () => {
     const adjustment = Math.floor(books.length / 2);
-    // const adjustment = 0;
     console.log(adjustment);
     const index = current > 0 - adjustment ? current - 1 : current;
     dispatch(setCurrent(index));
@@ -41,7 +39,6 @@ const Library = () => {
 
   const next = () => {
     const adjustment = Math.floor(books.length / 2);
-    // const adjustment = 0;
     const index = current < books.length - 1 - adjustment ? current + 1 : current;
     dispatch(setCurrent(index));
   };
@@ -59,7 +56,6 @@ const Library = () => {
               <div className='book-selection'>
                 <div className='booklist-container'>
                   <BookList />
-                  {/* <CarouselControls /> */}
                   <CarouselControls prev={prev} next={next} />
                   <div className='overlay-left'></div>
                   <div className='overlay-right'></div>

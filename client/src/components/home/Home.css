@@ -13,6 +13,13 @@
   padding-left: 13rem;
 }
 
+@media screen and (max-width: 1250px) {
+  .main-content {
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .app-grid {
     grid-template-columns: 1fr;

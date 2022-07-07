@@ -1,6 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axiosResume from '../apis/resume';
 
+// * state to control async call to node server for resume data.
+// ! NOTE: asyncThunk not working. I had to revert to standard fetch in the component. Troubleshoot
+
 // * asyncThunk for data fetch
 export const fetchResume = createAsyncThunk('redux/fetchResume', async () => {
   try {

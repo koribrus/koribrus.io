@@ -1,7 +1,5 @@
 .library {
   width: 100vw;
-  /* height: 100vh;
-  overflow: hidden; */
 }
 
 .app-lib {
@@ -82,7 +80,26 @@
   background-image: radial-gradient(445px at 20% 50%, #ffffff, #0000);
 }
 
+@media screen and (max-width: 1200px) {
+  .container-lib {
+    background-color: var(--primary-bg-lib);
+    padding: 0 1rem;
+  }
+}
+
 @media screen and (max-width: 920px) {
+  .app-lib {
+    height: 75vh;
+    background: var(--tertiary-text-lib);
+  }
+
+  .overlay-left,
+  .overlay-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
   .app-lib {
     height: 75vh;
     background: var(--tertiary-text-lib);
@@ -106,10 +123,5 @@
 
   .column-insert {
     border: none;
-  }
-
-  .overlay-left,
-  .overlay-right {
-    display: none;
   }
 }

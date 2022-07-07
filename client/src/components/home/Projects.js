@@ -6,7 +6,6 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 import useObserver from '../../hooks/useObserver';
 import { setProjects } from '../../redux/visibility';
-// import { setDesktop } from '../../redux/display';
 import { setProject1, setProject2, setProject3 } from '../../redux/visibility';
 import { load } from '../../redux/projects';
 
@@ -26,8 +25,10 @@ const Projects = () => {
   const dispatch = useDispatch();
   const stableDispatch = useCallback(dispatch, []);
 
+  // * useObserver custom hook for reveal on scroll
   useObserver(projectsRef, setProjects);
 
+  // * fetch project data from node server
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await fetch('/api/projects');

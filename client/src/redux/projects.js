@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// const initialState = { projectsTest: ['initial state'] };
+// * state holding projects pulled from api call to node server for rendering
 
 export const projectsSlice = createSlice({
   name: 'projects',

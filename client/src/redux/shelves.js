@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// * static state fro rendering shelf buttons in Library app
+
 const initialState = {
   shelves: [
     {

@@ -32,7 +32,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* grid-column: 6 / -1; */
   grid-column: 5 / 13;
   grid-row: 1 / 2;
   z-index: 1;

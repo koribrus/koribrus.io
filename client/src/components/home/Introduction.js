@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Introduction.css';
 
 const Introduction = () => {
@@ -9,8 +10,16 @@ const Introduction = () => {
       <h2 className='animate-intro animate-intro-3'>Web Development | Communications</h2>
       <div className='intro-content'>
         <p className='animate-intro animate-intro-4'>
-          Welcome to my portfolio! This site is a React application with a backend Express server in
-          Node.js. Check out the code on my{' '}
+          I'm an aspiring full stack web developer with a background in marketing and
+          communications. Check out my{' '}
+          <Link to='/resume' className='body-link'>
+            resume
+          </Link>{' '}
+          for a full list of my projects, coursework, and experience.
+        </p>
+        <p className='animate-intro animate-intro-4'>
+          This site is a showcase for my growing portfolio — a React application with a backend
+          Express server in Node.js. See the code on{' '}
           <a
             href='https://github.com/koribrus/koribrus.io'
             rel='noreferrer'
@@ -18,15 +27,10 @@ const Introduction = () => {
             className='body-link'
           >
             GitHub
-          </a>{' '}
-          page.
+          </a>
+          .
         </p>
-        <p className='animate-intro animate-intro-4'>
-          I've quickly come to love the challenges and opportunities of web programming. I'm excited
-          to continue exploring JavaScript at greater depth and expand my understanding into new
-          languages.
-        </p>
-        <p className='animate-intro animate-intro-4'>My focus has been on...</p>
+        <p className='animate-intro animate-intro-4'>Major technologies I've focused on are...</p>
         <div className='bullet-columns animate-intro animate-intro-5'>
           <ul>
             <li>react/redux</li>

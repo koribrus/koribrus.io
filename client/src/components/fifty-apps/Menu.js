@@ -11,14 +11,6 @@ const Menu = (props) => {
   // * useRef to manually set div height & box shadow for css transition
   const dropdownRef = useRef();
 
-  // const mobileMenuCntrl = () => {
-  //   if (menuOpen) {
-  //     dispatch(close());
-  //   } else {
-  //     dispatch(open());
-  //   }
-  // };
-
   return (
     <div className='apps-menu' onMouseLeave={() => dispatch(close())}>
       <div className='apps-menu-cntrl' onClick={() => dispatch(open())}>

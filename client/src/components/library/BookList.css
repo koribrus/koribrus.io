@@ -3,14 +3,11 @@
   width: 175px;
   padding: 10px;
   text-align: center;
-  /* overflow: hidden; */
   transition: var(--transition-time) ease;
 }
 
 .carousel {
   position: relative;
-  /* width: 175px; */
-  /* overflow: hidden; */
   white-space: nowrap;
 }
 
@@ -28,21 +25,3 @@
   top: 0;
   right: 0;
 }
-
-/* .overlay-left {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 42%;
-  height: 100%;
-  background-image: radial-gradient(445px at 80% 50%, #ffffff, #0000);
-}
-
-.overlay-right {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 42%;
-  height: 100%;
-  background-image: radial-gradient(445px at 20% 50%, #ffffff, #0000);
-} */

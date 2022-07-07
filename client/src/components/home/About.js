@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { setAbout } from '../../redux/visibility';
 import useObserver from '../../hooks/useObserver';
 import Header from './Header';
@@ -20,18 +19,13 @@ const About = () => {
       <div className='about-content'>
         <div className='profile-text'>
           <p>
-            I'm an aspiring full stack web developer with a background in marketing and
-            communications. For the past 20 months I've taught myself web programming through online
-            courses and tutorials. For a full listing of my coursework, see my{' '}
-            <Link to='/resume' className='body-link'>
-              resume
-            </Link>
-            .
+            For the past 20 months I've taught myself web programming through courses at Udemy and
+            Codecademy and online tutorials.
           </p>
           <p>
-            While my goal has been a career, I've discovered a love of the discipline and the
-            unending learning opportunities to be had.I have a talent for making complex ideas clear
-            and bring that approach to my web projects.
+            I've quickly come to love the challenges and opportunities of web programming. I'm
+            excited to continue exploring JavaScript at greater depth and expand my understanding
+            into new languages.
           </p>
           <p>
             Outside of work, I'm a passionate photographer in film and digital, a voracious reader,

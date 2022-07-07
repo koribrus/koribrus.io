@@ -66,11 +66,14 @@
   margin: 0 1rem;
 }
 
-@media screen and (max-width: 920px) {
-  .book-details {
-    padding: 0 1rem 0.5rem 1rem;
+@media screen and (max-width: 1200px) {
+  .book-title-h2 {
+    top: 0;
+    width: 75%;
   }
+}
 
+@media screen and (max-width: 1100px) {
   .book-btns {
     display: flex;
     flex-direction: column;
@@ -83,6 +86,12 @@
   .btn-book {
     margin: 0.5rem 10px;
     padding: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .book-details {
+    padding: 0 1rem 0.5rem 1rem;
   }
 
   .book-title-h2 {

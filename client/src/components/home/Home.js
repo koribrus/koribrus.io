@@ -19,9 +19,6 @@ const Home = () => {
   const dispatch = useDispatch();
   const homeRef = useRef();
 
-  // // * set initial screen size state (desktop vs mobile)
-  // dispatch(setDesktop(window.innerWidth > 480));
-
   // * test node server
   useEffect(() => {
     fetch('/api')

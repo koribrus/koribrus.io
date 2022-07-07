@@ -6,11 +6,11 @@ import Header from './Header';
 import './Contact.css';
 
 const Contact = () => {
-  // * redux & ref
+  // * state & ref
   const { contactVisible } = useSelector((state) => state.visibility);
   const contactRef = useRef();
 
-  // * custom hook
+  // * useObserver custom hook for reveal on scroll
   useObserver(contactRef, setContact);
 
   return (

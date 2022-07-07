@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 
+// * This is a custom hook to handle the reveal on scroll feature applied to each main page section.
+
 const useObserver = (ref, action) => {
   // * dispatches change to the 'visibility' state of a specific component and launches an Observer to activate scroll effect
   const dispatch = useDispatch();

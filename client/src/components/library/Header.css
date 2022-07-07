@@ -90,6 +90,19 @@
   max-width: 400px;
 }
 
+@media screen and (max-width: 1200px) {
+  .header-lib {
+    height: 31vh;
+  }
+  .banner-lib {
+    height: 20vh;
+  }
+
+  .overlay-lib {
+    padding: 0rem 2rem;
+  }
+}
+
 @media screen and (max-width: 920px) {
   .header-lib {
     background-color: var(--primary-bg-lib);

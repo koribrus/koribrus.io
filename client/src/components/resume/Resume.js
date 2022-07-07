@@ -13,6 +13,8 @@ import './Resume.css';
 
 const Resume = () => {
   const [resume, setResume] = useState(null);
+
+  // ! troubleshoot needed for asyncThunk/Redux fetch
   // const { resume } = useSelector((state) => state.resume);
   // const dispatch = useDispatch();
 
@@ -21,6 +23,7 @@ const Resume = () => {
   //   // eslint-disable-next-line react-hooks/exhaustive-deps
   // }, []);
 
+  // * using standard fetch to node server
   useEffect(() => {
     const fetchResumes = async () => {
       const response = await resumeAxios.get('resume');

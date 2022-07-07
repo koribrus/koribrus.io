@@ -1,5 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+// * state for dropdown menu in 50 apps
+
 const dropdownSlice = createSlice({
   name: 'menu',
   initialState: {
