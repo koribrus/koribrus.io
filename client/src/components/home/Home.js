@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { setDesktop } from '../../redux/display';
@@ -17,6 +17,7 @@ import './Home.css';
 const Home = () => {
   const { menuOpen } = useSelector((state) => state.display);
   const dispatch = useDispatch();
+  const homeRef = useRef();
 
   // // * set initial screen size state (desktop vs mobile)
   // dispatch(setDesktop(window.innerWidth > 480));
@@ -46,9 +47,9 @@ const Home = () => {
   };
 
   return (
-    <div className={appGridOverflow()}>
+    <div ref={homeRef} className={appGridOverflow()}>
       <Sidebar />
-      <NavigationBar />
+      <NavigationBar ref={homeRef.current} />
       <div className='main-content'>
         <Introduction />
         <About />

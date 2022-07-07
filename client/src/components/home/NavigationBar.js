@@ -1,21 +1,63 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setMenuOpen } from '../../redux/display';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
-const NavigationBar = () => {
+const NavigationBar = React.memo(() => {
   // * defined hooks
-  const toggler = useRef();
+  // const toggler = useRef();
   const dispatch = useDispatch();
 
   // * state of viewport display (desktop vs mobile)
   const { desktop } = useSelector((state) => state.display);
 
+  // const home = document.querySelector('.app-grid');
+
+  useEffect(() => {
+    if (desktop) return;
+
+    const navBtns = document.querySelectorAll('.nav-item');
+    const toggler = document.querySelector('.toggler');
+
+    navBtns.forEach((btn) =>
+      btn.addEventListener('click', (e) => {
+        const home = document.querySelector('.app-grid');
+        const section = btn.innerText.slice(3);
+
+        home.style.overflow = 'visible';
+        home.style.height = 'auto';
+
+        smoothScroll(e, section);
+
+        toggler.checked = false;
+      })
+    );
+  });
+
+  useEffect(() => {
+    if (desktop) return;
+
+    const toggler = document.querySelector('.toggler');
+
+    toggler.addEventListener('click', (e) => {
+      const home = document.querySelector('.app-grid');
+
+      if (toggler.checked) {
+        home.style.overflow = 'hidden';
+        home.style.height = '100vh';
+      }
+      if (!toggler.checked) {
+        home.style.overflow = 'visible';
+        home.style.height = 'auto';
+      }
+    });
+  });
+
   const smoothScroll = (e, section) => {
-    e.preventDefault();
     window.history.replaceState(null, '', `/${section}`);
     document.getElementById(section).scrollIntoView({ behavior: 'smooth' });
+    e.preventDefault();
   };
 
   // const toggleToggler = (section) => {
@@ -86,10 +128,10 @@ const NavigationBar = () => {
           <input
             type='checkbox'
             className='toggler'
-            ref={toggler}
-            onClick={() => {
-              dispatch(setMenuOpen());
-            }}
+            // ref={toggler}
+            // onClick={() => {
+            //   dispatch(setMenuOpen());
+            // }}
           />
           <div className='hamburger'>
             <div></div>
@@ -100,18 +142,19 @@ const NavigationBar = () => {
                 <ul>
                   <li
                     className='nav-item animate-nav animate-nav-1'
-                    onClick={(e) => smoothScroll(e, 'about')}
+                    // onClick={(e) => smoothScroll(e, 'about')}
                   >
-                    <a className='nav-link' href='/'>
-                      <span className='nav-bullet'>{'>>'}</span>
-                      <span className='paranthesis'>(</span>
+                    <div className='nav-link'>
+                      <span className='nav-bullet'>{'>> '}</span>
                       about
-                      <span className='paranthesis paranthesis-r'>)</span>
-                    </a>
+                    </div>
                   </li>
                   <li
                     className='nav-item animate-nav animate-nav-2'
-                    onClick={(e) => smoothScroll(e, 'projects')}
+                    onClick={(e) => {
+                      smoothScroll(e, 'projects');
+                      console.log(document.querySelector('.toggler'));
+                    }}
                   >
                     <a className='nav-link' href='/'>
                       <span className='nav-bullet'>{'>>'}</span>
@@ -146,6 +189,6 @@ const NavigationBar = () => {
   };
 
   return <React.Fragment>{renderNavigation()}</React.Fragment>;
-};
+});
 
 export default NavigationBar;
